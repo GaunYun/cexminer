@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600%7CRoboto:400,400i,500,700" rel="stylesheet">
+
+	{% load staticfiles %}
+	<!-- Icons -->
+	<link rel="stylesheet" href="{% static 'landingpage/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/cryptocoins.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/cryptocoins-colors.css' %}">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'landingpage/css/bootstrap-reboot.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/main-color1.css' %}">
+
+    {% comment %}<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">{% endcomment %}
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="{% static 'landingpage/icon/favicon-32x32.png' %}" sizes="32x32">
+	<link rel="apple-touch-icon" href="{% static 'landingpage/icon/favicon-32x32.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'landingpage/icon/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'landingpage/icon/apple-touch-icon-114x114.png' %}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'landingpage/icon/apple-touch-icon-144x144.png' %}">
+
+    <!-- Google reCaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<meta name="description" content="Automated Cryptocurrency trading bot">
+	<meta name="keywords" content="tradebot, robot, crypto, trading, ea, autotrading, bitcoin">
+
+	<title>Two-Step Authentication - cexminer.nz</title>
+
+</head>
+<body>
+
+	<!-- sign form -->
+	<div class="sign">
+		<!-- particles -->
+		<div id="particles-js" class="sign__particles"></div>
+		<!-- end particles -->
+
+		<div class="sign__content">
+			<!-- form -->
+			<form action="{% url 'two_step' %}" class="sign__form" method="post">{% csrf_token %}
+				<a href="/index"><img class="sign__logo" style="height:45px;" src="{% static 'landingpage/img/logo.png' %}" alt=""></a>
+                <div id="qr_code_img"></div>
+                <p>Please type QR Code</p>
+				<input type="text" class="form__input" name="qr_code" placeholder="QR Code">
+                <p style="color: rgb(255,0,0)">{{ verify_notice }}</p>
+                <button class="btn" type="submit">Confirm</button>
+			</form>
+			<!-- end form -->
+
+		</div>
+	</div>
+	<!-- end sign form -->
+
+	<script src="{% static 'landingpage/js/jquery-3.2.1.slim.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/smooth-scroll.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/particles.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/particles-app.js' %}"></script>
+	<script src="{% static 'landingpage/js/main.js' %}"></script>
+    <script src="{% static 'landingpage/js/jquery.qrcode.min.js' %}"></script>
+<script>
+    window.onload =function () {
+        var qr_code = "{{ qr_code }}";
+        console.log(qr_code);
+        jQuery('#qr_code_img').qrcode({width: 80,height: 80, text: qr_code})
+    };
+    {% comment %}var qr_code = "{{ qr_code }}";
+    jQuery('#qr_code_img').qrcode({
+        render : "table",
+        text : qr_code
+    }){% endcomment %}
+</script>
+</body>
+</html>

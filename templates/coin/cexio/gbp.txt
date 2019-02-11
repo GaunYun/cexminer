@@ -1,0 +1,5 @@
+BCH
+BTC
+DASH
+ETH
+ZEC

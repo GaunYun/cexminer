@@ -1,0 +1,1377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c74a82fb-6c6a-481b-9b8f-dd8c847839ca" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/cexminer_nz$views.coverage" NAME="views Coverage Results" MODIFIED="1529987174736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot" />
+    <SUITE FILE_PATH="coverage/cexminer_nz$run_bot.coverage" NAME="run_bot Coverage Results" MODIFIED="1528945455018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot" />
+    <SUITE FILE_PATH="coverage/cexminer_nz$run_bot__1_.coverage" NAME="run_bot (1) Coverage Results" MODIFIED="1529589327592" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cexminer_nz$rub_bot_temp.coverage" NAME="rub_bot_temp Coverage Results" MODIFIED="1530615411579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cexminer_nz$Boll_Bands.coverage" NAME="Boll_Bands Coverage Results" MODIFIED="1530708495429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cexminer_nz$DataBase.coverage" NAME="DataBase Coverage Results" MODIFIED="1530710825267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cexminer_nz$tests.coverage" NAME="tests Coverage Results" MODIFIED="1530799038011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bot" />
+    <SUITE FILE_PATH="coverage/TradingBot$settings.coverage" NAME="settings Coverage Results" MODIFIED="1524110339507" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TradingBot" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bot/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#1390#5549#0" expanded="false" />
+                <element signature="e#5768#6846#0" expanded="false" />
+                <element signature="e#7047#8799#0" expanded="false" />
+                <element signature="e#8858#10627#0" expanded="false" />
+                <element signature="e#11827#16786#0" expanded="false" />
+                <element signature="e#16820#20251#0" expanded="false" />
+                <element signature="e#20295#23108#0" expanded="false" />
+                <element signature="e#23143#24913#0" expanded="false" />
+                <element signature="e#24948#26155#0" expanded="false" />
+                <element signature="e#29287#30615#0" expanded="false" />
+                <element signature="e#30674#31516#0" expanded="false" />
+                <element signature="e#31571#32403#0" expanded="false" />
+                <element signature="e#32460#33770#0" expanded="false" />
+                <element signature="e#33826#35160#0" expanded="false" />
+                <element signature="e#35214#36613#0" expanded="false" />
+                <element signature="e#39612#54598#0" expanded="false" />
+                <element signature="e#54629#62376#0" expanded="false" />
+                <element signature="e#67404#68558#0" expanded="false" />
+                <element signature="e#68617#69459#0" expanded="false" />
+                <element signature="e#69514#70346#0" expanded="false" />
+                <element signature="e#70404#71714#0" expanded="false" />
+                <element signature="e#71770#73104#0" expanded="false" />
+                <element signature="e#73158#74557#0" expanded="false" />
+                <element signature="e#85125#103891#0" expanded="false" />
+                <element signature="e#85796#86949#0" expanded="false" />
+                <element signature="e#87008#87850#0" expanded="false" />
+                <element signature="e#87905#88737#0" expanded="false" />
+                <element signature="e#88795#90105#0" expanded="false" />
+                <element signature="e#90161#91495#0" expanded="false" />
+                <element signature="e#91549#92947#0" expanded="false" />
+                <element signature="e#93990#94634#0" expanded="false" />
+                <element signature="e#94691#97857#0" expanded="false" />
+                <element signature="e#103947#120144#0" expanded="false" />
+                <element signature="e#104465#105619#0" expanded="false" />
+                <element signature="e#105679#106521#0" expanded="false" />
+                <element signature="e#106576#107408#0" expanded="false" />
+                <element signature="e#107466#108776#0" expanded="false" />
+                <element signature="e#108832#110166#0" expanded="false" />
+                <element signature="e#110220#111619#0" expanded="false" />
+                <element signature="e#117051#117934#0" expanded="false" />
+                <element signature="e#118332#119282#0" expanded="false" />
+                <marker date="1529993550325" expanded="true" signature="26539:26800" ph="select * fro... trading_history" />
+                <marker date="1529993550325" expanded="true" signature="28368:28428" ph="select * fro... bot" />
+                <marker date="1529993550325" expanded="true" signature="62924:62998" ph="select * fro... bot" />
+                <marker date="1529993550325" expanded="true" signature="65146:65178" ph="select * fro... bot" />
+                <marker date="1529993550325" expanded="true" signature="66765:66801" ph="delete from backtest... " />
+                <marker date="1529993550325" expanded="true" signature="79946:80106" ph="update backtest... " />
+                <marker date="1529993550325" expanded="true" signature="81049:81209" ph="update backtest... " />
+                <marker date="1529993550325" expanded="true" signature="81701:81854" ph="select backt... backtest" />
+                <marker date="1529993550325" expanded="true" signature="83035:83182" ph="select backt... backtest" />
+                <marker date="1529993550325" expanded="true" signature="120161:120203" ph="select permi... user" />
+                <marker date="1529993550325" expanded="true" signature="122106:122150" ph="select * fro... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="122262:122348" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="122437:122525" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="122617:122701" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="122781:122867" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="122955:123040" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="123126:123209" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="123291:123377" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="123465:123550" ph="update exchange_info... " />
+                <marker date="1529993550325" expanded="true" signature="123676:123770" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="123869:123963" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="124068:124162" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="124251:124345" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="124444:124538" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="124634:124728" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="124818:124912" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="125011:125105" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="125214:125295" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="125356:125439" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="125502:125581" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="125638:125719" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="125780:125860" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="125920:125998" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="126056:126137" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="126198:126278" ph="select api_k... exchange_info" />
+                <marker date="1529993550325" expanded="true" signature="127094:127150" ph="select title... landingpage" />
+                <marker date="1529993550325" expanded="true" signature="127568:127631" ph="select title... landingpage" />
+                <marker date="1529993550325" expanded="true" signature="128422:128483" ph="update landingpage... " />
+                <marker date="1529993550325" expanded="true" signature="129367:129416" ph="select permi... user" />
+                <marker date="1529993550325" expanded="true" signature="130071:130247" ph="insert into `user`... " />
+                <marker date="1529993550325" expanded="true" signature="130384:130421" ph="select absID... user" />
+                <marker date="1529993550325" expanded="true" signature="130546:130614" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="130663:130731" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="130782:130850" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="130897:130965" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="131014:131082" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="131130:131198" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="131244:131312" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="131361:131429" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="132452:132515" ph="update user... " />
+                <marker date="1529993550325" expanded="true" signature="132583:132620" ph="select absID... user" />
+                <marker date="1529993550325" expanded="true" signature="132745:132813" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="132862:132930" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="132981:133049" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="133096:133164" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="133213:133281" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="133329:133397" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="133443:133511" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="133560:133628" ph="insert into `exchange_info`... " />
+                <marker date="1529993550325" expanded="true" signature="136105:136613" ph="insert into `bot`... " />
+                <marker date="1529993550325" expanded="true" signature="139430:139949" ph="insert into `bot`... " />
+                <marker date="1529993550325" expanded="true" signature="140360:140434" ph="select * fro... bot" />
+                <marker date="1529993550325" expanded="true" signature="142787:143317" ph="insert into `bot`... " />
+                <marker date="1529993550325" expanded="true" signature="143702:143776" ph="select * fro... bot" />
+                <marker date="1529993550325" expanded="true" signature="146458:146879" ph="insert into `bot`... " />
+                <marker date="1529993550325" expanded="true" signature="149499:149950" ph="insert into `bot`... " />
+                <marker date="1529993550325" expanded="true" signature="152579:153030" ph="insert into `bot`... " />
+                <marker date="1529993550325" expanded="true" signature="153750:153914" ph="select bot.b... bot" />
+                <marker date="1529993550325" expanded="true" signature="154776:154822" ph="update bot... " />
+                <marker date="1529993550325" expanded="true" signature="155950:156010" ph="update bot_run_time... " />
+                <marker date="1529993550325" expanded="true" signature="156169:156227" ph="update bot... " />
+                <marker date="1529993550325" expanded="true" signature="157132:157239" ph="select * fro... backtest" />
+                <marker date="1529993550325" expanded="true" signature="157536:157683" ph="insert into `backtest`... " />
+                <marker date="1529993550325" expanded="true" signature="157950:158064" ph="select buy_p... backtest" />
+                <marker date="1529993550325" expanded="true" signature="158620:158795" ph="update backtest... " />
+                <marker date="1529993550325" expanded="true" signature="159439:159546" ph="select * fro... backtest" />
+                <marker date="1529993550325" expanded="true" signature="159841:159988" ph="insert into `backtest`... " />
+                <marker date="1529993550325" expanded="true" signature="160232:160346" ph="select buy_p... backtest" />
+                <marker date="1529993550325" expanded="true" signature="160869:161044" ph="update backtest... " />
+                <marker date="1529993550325" expanded="true" signature="161668:161732" ph="select * fro... backtest" />
+                <marker date="1529993550325" expanded="true" signature="162028:162175" ph="insert into `backtest`... " />
+                <marker date="1529993550325" expanded="true" signature="162414:162528" ph="select buy_p... backtest" />
+                <marker date="1529993550325" expanded="true" signature="163052:163227" ph="update backtest... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rub_bot_temp.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rub_bot_temp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="700" column="122" lean-forward="false" selection-start-line="700" selection-start-column="103" selection-end-line="700" selection-end-column="123" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#1938#2486#0" expanded="false" />
+                <element signature="e#2604#3082#0" expanded="false" />
+                <element signature="e#3145#7354#0" expanded="false" />
+                <element signature="e#9727#10230#0" expanded="false" />
+                <element signature="e#10271#10762#0" expanded="false" />
+                <element signature="e#10802#11293#0" expanded="false" />
+                <element signature="e#13795#14057#0" expanded="false" />
+                <element signature="e#14305#19548#0" expanded="false" />
+                <element signature="e#19597#24792#0" expanded="false" />
+                <element signature="e#22570#24792#0" expanded="false" />
+                <element signature="e#24923#27366#0" expanded="false" />
+                <element signature="e#27566#30087#0" expanded="false" />
+                <element signature="e#30273#34141#0" expanded="false" />
+                <element signature="e#31958#32459#0" expanded="false" />
+                <element signature="e#32502#33005#0" expanded="false" />
+                <element signature="e#33046#33537#0" expanded="false" />
+                <element signature="e#33577#34068#0" expanded="false" />
+                <element signature="e#37468#38050#0" expanded="false" />
+                <marker date="1530626047647" expanded="true" signature="1671:1708" ph="select bot_i... missing_value" />
+                <marker date="1530626047647" expanded="true" signature="8917:8991" ph="select api_k... exchange_info" />
+                <marker date="1530626047647" expanded="true" signature="12566:12658" ph="select buy_p... trading_history" />
+                <marker date="1530626047647" expanded="true" signature="12848:12942" ph="select sell_... trading_history" />
+                <marker date="1530626047647" expanded="true" signature="13135:13232" ph="select order... trading_history" />
+                <marker date="1530626047647" expanded="true" signature="13446:13524" ph="select bid_p... coin_price" />
+                <marker date="1530626047647" expanded="true" signature="13446:13536" ph="select bid_p... coin_price" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Boll_Bands.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Boll_Bands.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="212" column="150" lean-forward="false" selection-start-line="212" selection-start-column="150" selection-end-line="212" selection-end-column="150" />
+              <folding>
+                <element signature="e#180#219#0" expanded="true" />
+                <element signature="e#4081#7884#0" expanded="false" />
+                <element signature="e#8155#12051#0" expanded="false" />
+                <element signature="e#12322#13699#0" expanded="false" />
+                <element signature="e#27491#29833#0" expanded="false" />
+                <element signature="e#29189#29810#0" expanded="false" />
+                <element signature="e#29884#30294#0" expanded="false" />
+                <element signature="e#30377#33043#0" expanded="false" />
+                <element signature="e#34074#35173#0" expanded="false" />
+                <element signature="e#35217#36349#0" expanded="false" />
+                <marker date="1530800529914" expanded="true" signature="3296:3353" ph="select count... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="6095:6344" ph="insert into trading_history... " />
+                <marker date="1530800529914" expanded="true" signature="10070:10319" ph="insert into trading_history... " />
+                <marker date="1530800529914" expanded="true" signature="13416:13583" ph="insert into trading_history... " />
+                <marker date="1530800529914" expanded="true" signature="13735:13812" ph="select order... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="27576:27749" ph="select bot.*... bot" />
+                <marker date="1530800529914" expanded="true" signature="28274:28344" ph="select api_k... exchange_info" />
+                <marker date="1530800529914" expanded="true" signature="28609:28689" ph="select price... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="28897:28977" ph="select price... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="29974:30036" ph="select perio... bollinger_bands" />
+                <marker date="1530800529914" expanded="true" signature="31838:31907" ph="select order... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="32296:32347" ph="update trading_history... " />
+                <marker date="1530800529914" expanded="true" signature="33273:33356" ph="select last_... price_history" />
+                <marker date="1530800529914" expanded="true" signature="35301:35370" ph="select order... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="35499:35680" ph="select excha... bot" />
+                <marker date="1530800529914" expanded="true" signature="36906:37043" ph="insert into `trading_history`... " />
+                <marker date="1530800529914" expanded="true" signature="37253:37298" ph="select * fro... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="37851:38022" ph="update trading_history... " />
+                <marker date="1530800529914" expanded="true" signature="38269:38340" ph="select * fro... trading_history" />
+                <marker date="1530800529914" expanded="true" signature="38646:38788" ph="insert into `trading_history`... " />
+                <marker date="1530800529914" expanded="true" signature="39490:39664" ph="update trading_history... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Trading.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Trading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="121" column="41" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+              <folding>
+                <element signature="e#1207#1705#0" expanded="false" />
+                <marker date="1530765193684" expanded="true" signature="3031:3479" ph="SELECT bot.b... bot" />
+                <marker date="1530765193684" expanded="true" signature="3676:3731" ph="SELECT min(t... order_history" />
+                <marker date="1530765193684" expanded="true" signature="7840:7857" ph="SELECT * fro... bot" />
+                <marker date="1530765193684" expanded="true" signature="9699:9726" ph="SELECT * fro... exchange_site" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataBase.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataBase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="229" column="1" lean-forward="false" selection-start-line="229" selection-start-column="1" selection-end-line="229" selection-end-column="1" />
+              <folding>
+                <element signature="e#156#178#0" expanded="true" />
+                <marker date="1530760620828" expanded="true" signature="1996:2449" ph="CREATE TABLE... IF" />
+                <marker date="1530760620828" expanded="true" signature="2529:3597" ph="CREATE TABLE... IF" />
+                <marker date="1530760620828" expanded="true" signature="3678:4161" ph="CREATE TABLE... IF" />
+                <marker date="1530760620828" expanded="true" signature="4254:5088" ph="CREATE TABLE... IF" />
+                <marker date="1530760620828" expanded="true" signature="5182:5935" ph="CREATE TABLE... IF" />
+                <marker date="1530760620828" expanded="true" signature="6019:6541" ph="CREATE TABLE... IF" />
+                <marker date="1530760620828" expanded="true" signature="8949:9038" ph="INSERT INTO `exchange_info`... " />
+                <marker date="1530760620828" expanded="true" signature="9406:9747" ph="INSERT INTO `bot`... " />
+                <marker date="1530760620828" expanded="true" signature="10934:10951" ph="INSERT INTO `missing_value`... " />
+                <marker date="1530760620828" expanded="true" signature="11463:11480" ph="INSERT INTO `missing_value`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TradingBot/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+                <element signature="e#580#1124#0" expanded="false" />
+                <element signature="e#1142#1682#0" expanded="false" />
+                <marker date="1530811425483" expanded="true" signature="2048:2122" ph="select api_k... exchange_info" />
+                <marker date="1530811425483" expanded="true" signature="2234:2266" ph="select * fro... bot" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="history.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/pages/user/html/history.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="11101">
+              <caret line="1031" column="22" lean-forward="false" selection-start-line="1031" selection-start-column="22" selection-end-line="1031" selection-end-column="22" />
+              <folding>
+                <element signature="e#5122#5671#0#DjangoTemplate" expanded="false" />
+                <element signature="e#8519#10802#0#DjangoTemplate" expanded="false" />
+                <element signature="e#10807#13075#0#DjangoTemplate" expanded="false" />
+                <element signature="e#15398#16524#0#DjangoTemplate" expanded="false" />
+                <element signature="e#17710#18836#0#DjangoTemplate" expanded="false" />
+                <element signature="e#18858#20235#0#DjangoTemplate" expanded="false" />
+                <element signature="e#20337#26048#0#DjangoTemplate" expanded="false" />
+                <element signature="e#32387#33222#0#DjangoTemplate" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>all_backtest_result</find>
+      <find>&quot;&lt;h2 class='m-m'&gt; BackTest Result &lt;/h2&gt;&quot;</find>
+      <find>: total_win</find>
+      <find>mem</find>
+      <find>tab3</find>
+      <find>datetime.</find>
+      <find>img</find>
+      <find>logo</find>
+      <find>password='Royal616@</find>
+      <find>tab1</find>
+      <find>BCC</find>
+      <find>sell select coin with 0</find>
+      <find>' :'</find>
+      <find>with open(&quot;bot_log.txt&quot;, &quot;w&quot;) as log_file:</find>
+      <find>* float(trading_volume), 6</find>
+      <find>with open</find>
+      <find>upper = int</find>
+      <find>lower = int</find>
+      <find>password='Royal616@'</find>
+      <find>interval1</find>
+      <find>coin balance is less than</find>
+      <find>password=''</find>
+      <find>host='192.168.5.41'</find>
+      <find>datetime.datetime.f</find>
+      <find>fromtimestamp</find>
+      <find>order_id</find>
+      <find>base_currency</find>
+      <find>buy_higher,</find>
+      <find>(sql</find>
+      <find>bid_price)</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>{% comment %}&lt;a class=&quot;dropdown-item&quot; href&gt;Edit&lt;/a&gt;{% endcomment %}</replace>
+      <replace>cryptopia</replace>
+      <replace>&quot;+table_name+&quot;</replace>
+      <replace>cex</replace>
+      <replace>'https': 'http:/</replace>
+      <replace>andynfx:trieuanh</replace>
+      <replace>'https': 'https:</replace>
+      <replace>password='cso'</replace>
+      <replace>position</replace>
+      <replace>len(r1)</replace>
+      <replace>len(r1</replace>
+      <replace>r1:</replace>
+      <replace>: round(max_drawdown, 2)</replace>
+      <replace>: round(total_profit, 2)</replace>
+      <replace>: round(total_win, 2)</replace>
+      <replace>&quot;&lt;h5 class='m-m text-primary'&gt; BackTest Result &lt;/h5&gt;&quot;</replace>
+      <replace>BCH</replace>
+      <replace>': '</replace>
+      <replace>with open(&quot;bot_log.txt&quot;, &quot;a&quot;) as log_file:</replace>
+      <replace>, 6</replace>
+      <replace>with open</replace>
+      <replace>upper = float</replace>
+      <replace>lower = float</replace>
+      <replace>password=''</replace>
+      <replace>password='Royal616@'</replace>
+      <replace>host='localhost'</replace>
+      <replace>bot_info['pair'].split(&quot;/&quot;)[1]</replace>
+      <replace>store.log.info</replace>
+      <replace>bot_info['buy_higher']</replace>
+      <replace>bot_info</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/templates/pages/user/html/trading.html" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/pages/user/html/profit-loss.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/account_setting.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/exchange.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/form.element.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/admin_dashboard.html" />
+        <option value="$PROJECT_DIR$/static/user/assets/styles/new_defined.css" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/base.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/log.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/home.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/profile.html" />
+        <option value="$PROJECT_DIR$/TradingBot/urls.py" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/css/new-defined.css" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/faq.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/css/main-color1.css" />
+        <option value="$PROJECT_DIR$/static/landingpage/css/main-color1.css" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/pricing.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/article.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/about.html" />
+        <option value="$PROJECT_DIR$/static/landingpage/css/new-defined.css" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/document_manage.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/index.html" />
+        <option value="$PROJECT_DIR$/bot/token.py" />
+        <option value="$PROJECT_DIR$/templates/acc_active_email.html" />
+        <option value="$PROJECT_DIR$/bot/models.py" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/password.html" />
+        <option value="$PROJECT_DIR$/templates/change_password_email.html" />
+        <option value="$PROJECT_DIR$/templates/new_password_email.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/signup.html" />
+        <option value="$PROJECT_DIR$/bot/forms.py" />
+        <option value="$PROJECT_DIR$/bot/tests.py" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/qrcode.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/exchange_info.html" />
+        <option value="$PROJECT_DIR$/templates/pages/landingpage/login.html" />
+        <option value="$PROJECT_DIR$/bot/run_bot.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/static/user/assets/styles/app.css" />
+        <option value="$PROJECT_DIR$/static/user/assets/styles/jquery.dataTables.min.css" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/dashboard.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/user_setting.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/profit_loss.html" />
+        <option value="$PROJECT_DIR$/run_bot.py" />
+        <option value="$PROJECT_DIR$/TradingBot/settings.py" />
+        <option value="$PROJECT_DIR$/bot/urls.py" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/trading.html" />
+        <option value="$PROJECT_DIR$/templates/pages/user/html/history.html" />
+        <option value="$PROJECT_DIR$/bot/views.py" />
+        <option value="$PROJECT_DIR$/TradingBot/new_run_bot.py" />
+        <option value="$PROJECT_DIR$/rub_bot_temp.py" />
+        <option value="$PROJECT_DIR$/DataBase.py" />
+        <option value="$PROJECT_DIR$/Boll_Bands.py" />
+        <option value="$PROJECT_DIR$/TradingBot/tests.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/static/user/package.json" />
+      <path value="$PROJECT_DIR$/templates/pages/user/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="41" />
+    <option name="y" value="-3" />
+    <option name="width" value="1399" />
+    <option name="height" value="903" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cexminer.nz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cexminer.nz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cexminer.nz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cexminer.nz" type="462c0819:PsiDirectoryNode" />
+              <item name="TradingBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="F:\Escrow Task\Django\TradingBot\static\landingpage\css" />
+      <recent name="$PROJECT_DIR$/static/landingpage/img" />
+      <recent name="F:\Escrow Task\Django\TradingBot\static\user\assets\styles" />
+      <recent name="F:\Escrow Task\Django\TradingBot\templates\pages\user\html" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/TradingBot" />
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/bot" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.tests">
+    <configuration name="Boll_Bands" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TradingBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Boll_Bands.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="DataBase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TradingBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DataBase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="rub_bot_temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TradingBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/rub_bot_temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TradingBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TradingBot/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bot" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TradingBot" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="TradingBot" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="TradingBot.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="TradingBot" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Django server.TradingBot" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tests" />
+      <item index="2" class="java.lang.String" itemvalue="Python.views" />
+      <item index="3" class="java.lang.String" itemvalue="Python.rub_bot_temp" />
+      <item index="4" class="java.lang.String" itemvalue="Python.DataBase" />
+      <item index="5" class="java.lang.String" itemvalue="Python.Boll_Bands" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.tests" />
+        <item index="1" class="java.lang.String" itemvalue="Python.DataBase" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Boll_Bands" />
+        <item index="3" class="java.lang.String" itemvalue="Python.rub_bot_temp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.views" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c74a82fb-6c6a-481b-9b8f-dd8c847839ca" name="Default" comment="" />
+      <created>1523419645188</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523419645188</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="314" height="676" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32357043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20415473" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="manage.py@TradingBot" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41143653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="122" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="167" column="4" lean-forward="false" selection-start-line="167" selection-start-column="4" selection-end-line="167" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/css/main-color1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="1127" column="24" lean-forward="true" selection-start-line="1127" selection-start-column="24" selection-end-line="1127" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/landingpage/css/main-color1.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="1131" column="3" lean-forward="true" selection-start-line="1131" selection-start-column="3" selection-end-line="1131" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/pricing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="247" column="4" lean-forward="false" selection-start-line="247" selection-start-column="4" selection-end-line="287" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="97" column="35" lean-forward="true" selection-start-line="97" selection-start-column="35" selection-end-line="97" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/dashboard.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="742">
+          <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/landingpage/css/new-defined.css" />
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/document_manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14644">
+          <caret line="1046" column="59" lean-forward="false" selection-start-line="1046" selection-start-column="59" selection-end-line="1046" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py" />
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/django/utils/datastructures.py" />
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/static.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14924">
+          <caret line="1066" column="7" lean-forward="false" selection-start-line="1066" selection-start-column="7" selection-end-line="1066" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/change_password_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="53" lean-forward="false" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1204">
+          <caret line="86" column="6" lean-forward="false" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_password_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" column="39" lean-forward="false" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/acc_active_email.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/password.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="70" column="27" lean-forward="false" selection-start-line="70" selection-start-column="27" selection-end-line="70" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/qrcode.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="79" column="74" lean-forward="false" selection-start-line="79" selection-start-column="74" selection-end-line="79" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/exchange_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="178" column="29" lean-forward="false" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/run_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/datatable.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="601" column="33" lean-forward="false" selection-start-line="601" selection-start-column="33" selection-end-line="601" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/user/assets/styles/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/user/assets/styles/jquery.dataTables.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="0" column="1746" lean-forward="false" selection-start-line="0" selection-start-column="1735" selection-end-line="0" selection-end-column="1746" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/user/assets/styles/new_defined.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="64" column="28" lean-forward="false" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/user_setting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4998">
+          <caret line="294" column="0" lean-forward="false" selection-start-line="294" selection-start-column="0" selection-end-line="294" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/profit_loss.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5423">
+          <caret line="319" column="36" lean-forward="false" selection-start-line="319" selection-start-column="36" selection-end-line="319" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="63" lean-forward="false" selection-start-line="42" selection-start-column="59" selection-end-line="42" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot_log.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/aa.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75191">
+          <caret line="4452" column="29" lean-forward="false" selection-start-line="4452" selection-start-column="29" selection-end-line="4452" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="50" column="84" lean-forward="false" selection-start-line="50" selection-start-column="84" selection-end-line="50" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/trading.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4386">
+          <caret line="603" column="96" lean-forward="false" selection-start-line="603" selection-start-column="96" selection-end-line="603" selection-end-column="96" />
+          <folding>
+            <element signature="n#if#6;n#!!top" expanded="false" />
+            <element signature="n#if#36;n#!!top" expanded="false" />
+            <element signature="n#if#37;n#!!top" expanded="false" />
+            <element signature="n#if#41;n#!!top" expanded="false" />
+            <element signature="n#if#45;n#!!top" expanded="false" />
+            <element signature="e#157666#160697#0#DjangoTemplate" expanded="false" />
+            <element signature="e#173790#175375#0#DjangoTemplate" expanded="false" />
+            <element signature="e#199139#202195#0#DjangoTemplate" expanded="false" />
+            <element signature="e#202226#205148#0#DjangoTemplate" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/user/html/history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11101">
+          <caret line="1031" column="22" lean-forward="false" selection-start-line="1031" selection-start-column="22" selection-end-line="1031" selection-end-column="22" />
+          <folding>
+            <element signature="e#5122#5671#0#DjangoTemplate" expanded="false" />
+            <element signature="e#8519#10802#0#DjangoTemplate" expanded="false" />
+            <element signature="e#10807#13075#0#DjangoTemplate" expanded="false" />
+            <element signature="e#15398#16524#0#DjangoTemplate" expanded="false" />
+            <element signature="e#17710#18836#0#DjangoTemplate" expanded="false" />
+            <element signature="e#18858#20235#0#DjangoTemplate" expanded="false" />
+            <element signature="e#20337#26048#0#DjangoTemplate" expanded="false" />
+            <element signature="e#32387#33222#0#DjangoTemplate" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TradingBot/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="21" lean-forward="false" selection-start-line="164" selection-start-column="21" selection-end-line="164" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#1390#5549#0" expanded="false" />
+            <element signature="e#5768#6846#0" expanded="false" />
+            <element signature="e#7047#8799#0" expanded="false" />
+            <element signature="e#8858#10627#0" expanded="false" />
+            <element signature="e#11827#16786#0" expanded="false" />
+            <element signature="e#16820#20251#0" expanded="false" />
+            <element signature="e#20295#23108#0" expanded="false" />
+            <element signature="e#23143#24913#0" expanded="false" />
+            <element signature="e#24948#26155#0" expanded="false" />
+            <element signature="e#29287#30615#0" expanded="false" />
+            <element signature="e#30674#31516#0" expanded="false" />
+            <element signature="e#31571#32403#0" expanded="false" />
+            <element signature="e#32460#33770#0" expanded="false" />
+            <element signature="e#33826#35160#0" expanded="false" />
+            <element signature="e#35214#36613#0" expanded="false" />
+            <element signature="e#39612#54598#0" expanded="false" />
+            <element signature="e#54629#62376#0" expanded="false" />
+            <element signature="e#67404#68558#0" expanded="false" />
+            <element signature="e#68617#69459#0" expanded="false" />
+            <element signature="e#69514#70346#0" expanded="false" />
+            <element signature="e#70404#71714#0" expanded="false" />
+            <element signature="e#71770#73104#0" expanded="false" />
+            <element signature="e#73158#74557#0" expanded="false" />
+            <element signature="e#85125#103891#0" expanded="false" />
+            <element signature="e#85796#86949#0" expanded="false" />
+            <element signature="e#87008#87850#0" expanded="false" />
+            <element signature="e#87905#88737#0" expanded="false" />
+            <element signature="e#88795#90105#0" expanded="false" />
+            <element signature="e#90161#91495#0" expanded="false" />
+            <element signature="e#91549#92947#0" expanded="false" />
+            <element signature="e#93990#94634#0" expanded="false" />
+            <element signature="e#94691#97857#0" expanded="false" />
+            <element signature="e#103947#120144#0" expanded="false" />
+            <element signature="e#104465#105619#0" expanded="false" />
+            <element signature="e#105679#106521#0" expanded="false" />
+            <element signature="e#106576#107408#0" expanded="false" />
+            <element signature="e#107466#108776#0" expanded="false" />
+            <element signature="e#108832#110166#0" expanded="false" />
+            <element signature="e#110220#111619#0" expanded="false" />
+            <element signature="e#117051#117934#0" expanded="false" />
+            <element signature="e#118332#119282#0" expanded="false" />
+            <marker date="1529993550325" expanded="true" signature="26539:26800" ph="select * fro... trading_history" />
+            <marker date="1529993550325" expanded="true" signature="28368:28428" ph="select * fro... bot" />
+            <marker date="1529993550325" expanded="true" signature="62924:62998" ph="select * fro... bot" />
+            <marker date="1529993550325" expanded="true" signature="65146:65178" ph="select * fro... bot" />
+            <marker date="1529993550325" expanded="true" signature="66765:66801" ph="delete from backtest... " />
+            <marker date="1529993550325" expanded="true" signature="79946:80106" ph="update backtest... " />
+            <marker date="1529993550325" expanded="true" signature="81049:81209" ph="update backtest... " />
+            <marker date="1529993550325" expanded="true" signature="81701:81854" ph="select backt... backtest" />
+            <marker date="1529993550325" expanded="true" signature="83035:83182" ph="select backt... backtest" />
+            <marker date="1529993550325" expanded="true" signature="120161:120203" ph="select permi... user" />
+            <marker date="1529993550325" expanded="true" signature="122106:122150" ph="select * fro... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="122262:122348" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="122437:122525" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="122617:122701" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="122781:122867" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="122955:123040" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="123126:123209" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="123291:123377" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="123465:123550" ph="update exchange_info... " />
+            <marker date="1529993550325" expanded="true" signature="123676:123770" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="123869:123963" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="124068:124162" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="124251:124345" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="124444:124538" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="124634:124728" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="124818:124912" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="125011:125105" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="125214:125295" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="125356:125439" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="125502:125581" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="125638:125719" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="125780:125860" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="125920:125998" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="126056:126137" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="126198:126278" ph="select api_k... exchange_info" />
+            <marker date="1529993550325" expanded="true" signature="127094:127150" ph="select title... landingpage" />
+            <marker date="1529993550325" expanded="true" signature="127568:127631" ph="select title... landingpage" />
+            <marker date="1529993550325" expanded="true" signature="128422:128483" ph="update landingpage... " />
+            <marker date="1529993550325" expanded="true" signature="129367:129416" ph="select permi... user" />
+            <marker date="1529993550325" expanded="true" signature="130071:130247" ph="insert into `user`... " />
+            <marker date="1529993550325" expanded="true" signature="130384:130421" ph="select absID... user" />
+            <marker date="1529993550325" expanded="true" signature="130546:130614" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="130663:130731" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="130782:130850" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="130897:130965" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="131014:131082" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="131130:131198" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="131244:131312" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="131361:131429" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="132452:132515" ph="update user... " />
+            <marker date="1529993550325" expanded="true" signature="132583:132620" ph="select absID... user" />
+            <marker date="1529993550325" expanded="true" signature="132745:132813" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="132862:132930" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="132981:133049" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="133096:133164" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="133213:133281" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="133329:133397" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="133443:133511" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="133560:133628" ph="insert into `exchange_info`... " />
+            <marker date="1529993550325" expanded="true" signature="136105:136613" ph="insert into `bot`... " />
+            <marker date="1529993550325" expanded="true" signature="139430:139949" ph="insert into `bot`... " />
+            <marker date="1529993550325" expanded="true" signature="140360:140434" ph="select * fro... bot" />
+            <marker date="1529993550325" expanded="true" signature="142787:143317" ph="insert into `bot`... " />
+            <marker date="1529993550325" expanded="true" signature="143702:143776" ph="select * fro... bot" />
+            <marker date="1529993550325" expanded="true" signature="146458:146879" ph="insert into `bot`... " />
+            <marker date="1529993550325" expanded="true" signature="149499:149950" ph="insert into `bot`... " />
+            <marker date="1529993550325" expanded="true" signature="152579:153030" ph="insert into `bot`... " />
+            <marker date="1529993550325" expanded="true" signature="153750:153914" ph="select bot.b... bot" />
+            <marker date="1529993550325" expanded="true" signature="154776:154822" ph="update bot... " />
+            <marker date="1529993550325" expanded="true" signature="155950:156010" ph="update bot_run_time... " />
+            <marker date="1529993550325" expanded="true" signature="156169:156227" ph="update bot... " />
+            <marker date="1529993550325" expanded="true" signature="157132:157239" ph="select * fro... backtest" />
+            <marker date="1529993550325" expanded="true" signature="157536:157683" ph="insert into `backtest`... " />
+            <marker date="1529993550325" expanded="true" signature="157950:158064" ph="select buy_p... backtest" />
+            <marker date="1529993550325" expanded="true" signature="158620:158795" ph="update backtest... " />
+            <marker date="1529993550325" expanded="true" signature="159439:159546" ph="select * fro... backtest" />
+            <marker date="1529993550325" expanded="true" signature="159841:159988" ph="insert into `backtest`... " />
+            <marker date="1529993550325" expanded="true" signature="160232:160346" ph="select buy_p... backtest" />
+            <marker date="1529993550325" expanded="true" signature="160869:161044" ph="update backtest... " />
+            <marker date="1529993550325" expanded="true" signature="161668:161732" ph="select * fro... backtest" />
+            <marker date="1529993550325" expanded="true" signature="162028:162175" ph="insert into `backtest`... " />
+            <marker date="1529993550325" expanded="true" signature="162414:162528" ph="select buy_p... backtest" />
+            <marker date="1529993550325" expanded="true" signature="163052:163227" ph="update backtest... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bot/token.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="43" lean-forward="false" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pages/landingpage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="129" column="4" lean-forward="false" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TradingBot/new_run_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#1077#1578#0" expanded="false" />
+            <element signature="e#1621#2124#0" expanded="false" />
+            <element signature="e#2165#2656#0" expanded="false" />
+            <element signature="e#2696#3187#0" expanded="false" />
+            <element signature="e#3315#4258#0" expanded="false" />
+            <element signature="e#4315#5902#0" expanded="false" />
+            <element signature="e#6071#6653#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="229" column="1" lean-forward="false" selection-start-line="229" selection-start-column="1" selection-end-line="229" selection-end-column="1" />
+          <folding>
+            <element signature="e#156#178#0" expanded="true" />
+            <marker date="1530760620828" expanded="true" signature="1996:2449" ph="CREATE TABLE... IF" />
+            <marker date="1530760620828" expanded="true" signature="2529:3597" ph="CREATE TABLE... IF" />
+            <marker date="1530760620828" expanded="true" signature="3678:4161" ph="CREATE TABLE... IF" />
+            <marker date="1530760620828" expanded="true" signature="4254:5088" ph="CREATE TABLE... IF" />
+            <marker date="1530760620828" expanded="true" signature="5182:5935" ph="CREATE TABLE... IF" />
+            <marker date="1530760620828" expanded="true" signature="6019:6541" ph="CREATE TABLE... IF" />
+            <marker date="1530760620828" expanded="true" signature="8949:9038" ph="INSERT INTO `exchange_info`... " />
+            <marker date="1530760620828" expanded="true" signature="9406:9747" ph="INSERT INTO `bot`... " />
+            <marker date="1530760620828" expanded="true" signature="10934:10951" ph="INSERT INTO `missing_value`... " />
+            <marker date="1530760620828" expanded="true" signature="11463:11480" ph="INSERT INTO `missing_value`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Trading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="121" column="41" lean-forward="false" selection-start-line="121" selection-start-column="41" selection-end-line="121" selection-end-column="41" />
+          <folding>
+            <element signature="e#1207#1705#0" expanded="false" />
+            <marker date="1530765193684" expanded="true" signature="3031:3479" ph="SELECT bot.b... bot" />
+            <marker date="1530765193684" expanded="true" signature="3676:3731" ph="SELECT min(t... order_history" />
+            <marker date="1530765193684" expanded="true" signature="7840:7857" ph="SELECT * fro... bot" />
+            <marker date="1530765193684" expanded="true" signature="9699:9726" ph="SELECT * fro... exchange_site" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Boll_Bands.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="212" column="150" lean-forward="false" selection-start-line="212" selection-start-column="150" selection-end-line="212" selection-end-column="150" />
+          <folding>
+            <element signature="e#180#219#0" expanded="true" />
+            <element signature="e#4081#7884#0" expanded="false" />
+            <element signature="e#8155#12051#0" expanded="false" />
+            <element signature="e#12322#13699#0" expanded="false" />
+            <element signature="e#27491#29833#0" expanded="false" />
+            <element signature="e#29189#29810#0" expanded="false" />
+            <element signature="e#29884#30294#0" expanded="false" />
+            <element signature="e#30377#33043#0" expanded="false" />
+            <element signature="e#34074#35173#0" expanded="false" />
+            <element signature="e#35217#36349#0" expanded="false" />
+            <marker date="1530800529914" expanded="true" signature="3296:3353" ph="select count... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="6095:6344" ph="insert into trading_history... " />
+            <marker date="1530800529914" expanded="true" signature="10070:10319" ph="insert into trading_history... " />
+            <marker date="1530800529914" expanded="true" signature="13416:13583" ph="insert into trading_history... " />
+            <marker date="1530800529914" expanded="true" signature="13735:13812" ph="select order... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="27576:27749" ph="select bot.*... bot" />
+            <marker date="1530800529914" expanded="true" signature="28274:28344" ph="select api_k... exchange_info" />
+            <marker date="1530800529914" expanded="true" signature="28609:28689" ph="select price... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="28897:28977" ph="select price... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="29974:30036" ph="select perio... bollinger_bands" />
+            <marker date="1530800529914" expanded="true" signature="31838:31907" ph="select order... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="32296:32347" ph="update trading_history... " />
+            <marker date="1530800529914" expanded="true" signature="33273:33356" ph="select last_... price_history" />
+            <marker date="1530800529914" expanded="true" signature="35301:35370" ph="select order... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="35499:35680" ph="select excha... bot" />
+            <marker date="1530800529914" expanded="true" signature="36906:37043" ph="insert into `trading_history`... " />
+            <marker date="1530800529914" expanded="true" signature="37253:37298" ph="select * fro... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="37851:38022" ph="update trading_history... " />
+            <marker date="1530800529914" expanded="true" signature="38269:38340" ph="select * fro... trading_history" />
+            <marker date="1530800529914" expanded="true" signature="38646:38788" ph="insert into `trading_history`... " />
+            <marker date="1530800529914" expanded="true" signature="39490:39664" ph="update trading_history... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TradingBot/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#580#1124#0" expanded="false" />
+            <element signature="e#1142#1682#0" expanded="false" />
+            <marker date="1530811425483" expanded="true" signature="2048:2122" ph="select api_k... exchange_info" />
+            <marker date="1530811425483" expanded="true" signature="2234:2266" ph="select * fro... bot" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rub_bot_temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="700" column="122" lean-forward="false" selection-start-line="700" selection-start-column="103" selection-end-line="700" selection-end-column="123" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+            <element signature="e#1938#2486#0" expanded="false" />
+            <element signature="e#2604#3082#0" expanded="false" />
+            <element signature="e#3145#7354#0" expanded="false" />
+            <element signature="e#9727#10230#0" expanded="false" />
+            <element signature="e#10271#10762#0" expanded="false" />
+            <element signature="e#10802#11293#0" expanded="false" />
+            <element signature="e#13795#14057#0" expanded="false" />
+            <element signature="e#14305#19548#0" expanded="false" />
+            <element signature="e#19597#24792#0" expanded="false" />
+            <element signature="e#22570#24792#0" expanded="false" />
+            <element signature="e#24923#27366#0" expanded="false" />
+            <element signature="e#27566#30087#0" expanded="false" />
+            <element signature="e#30273#34141#0" expanded="false" />
+            <element signature="e#31958#32459#0" expanded="false" />
+            <element signature="e#32502#33005#0" expanded="false" />
+            <element signature="e#33046#33537#0" expanded="false" />
+            <element signature="e#33577#34068#0" expanded="false" />
+            <element signature="e#37468#38050#0" expanded="false" />
+            <marker date="1530626047647" expanded="true" signature="1671:1708" ph="select bot_i... missing_value" />
+            <marker date="1530626047647" expanded="true" signature="8917:8991" ph="select api_k... exchange_info" />
+            <marker date="1530626047647" expanded="true" signature="12566:12658" ph="select buy_p... trading_history" />
+            <marker date="1530626047647" expanded="true" signature="12848:12942" ph="select sell_... trading_history" />
+            <marker date="1530626047647" expanded="true" signature="13135:13232" ph="select order... trading_history" />
+            <marker date="1530626047647" expanded="true" signature="13446:13524" ph="select bid_p... coin_price" />
+            <marker date="1530626047647" expanded="true" signature="13446:13536" ph="select bid_p... coin_price" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

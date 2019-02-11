@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600%7CRoboto:400,400i,500,700" rel="stylesheet">
+
+	{% load staticfiles %}
+	<!-- Icons -->
+	<link rel="stylesheet" href="{% static 'landingpage/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/cryptocoins.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/cryptocoins-colors.css' %}">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'landingpage/css/bootstrap-reboot.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/main-color1.css' %}">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="{% static 'landingpage/icon/favicon-32x32.png' %}" sizes="32x32">
+	<link rel="apple-touch-icon" href="{% static 'landingpage/icon/favicon-32x32.png' %}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{% static 'landingpage/icon/apple-touch-icon-72x72.png' %}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{% static 'landingpage/icon/apple-touch-icon-114x114.png' %}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{% static 'landingpage/icon/apple-touch-icon-144x144.png' %}">
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Dmitry Volkov">
+	<title>Smart Mine – Crypto Mining HTML Template</title>
+
+</head>
+<body>
+	
+	<!-- header -->
+	<header class="header header--white">
+		<!-- logo -->
+		<div class="header__logo">
+			<a href="index.html">
+				<img src="{% static 'landingpage/img/logo.png' %}" alt="">
+			</a>
+		</div>
+		<!-- end logo -->
+
+		<!-- navigation -->
+		<ul class="header__nav">
+			{% comment %}<li class="dropdown header__dropdown">
+				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+
+				<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink1">
+					<li><a href="/index">Home 1</a></li>
+					<li><a href="/index2">Home 2</a></li>
+				</ul>
+			</li>{% endcomment %}
+			<li><a href="/index">Home</a></li>
+            <li><a href="/about">How it works</a></li>
+			<li><a href="/pricing">Pricing</a></li>
+            <li><a href="/faq">FAQ</a></li>
+			<li><a href="/blog">Tutorial</a></li>
+			{% comment %}<li class="dropdown header__dropdown">
+				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+
+				<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					<li><a href="/article">Article</a></li>
+					<li><a href="/faq">Help</a></li>
+				</ul>
+			</li>{% endcomment %}
+		</ul>
+		<!-- end navigation -->
+
+		<!-- buttons -->
+		<div class="header__btns">
+			<a href="/login" class="btn btn--header">log in</a>
+			<a href="/signup" class="btn btn--header">sign up</a>
+		</div>
+		<!-- end buttons -->
+
+		<!-- mob button -->
+		<button class="header__menu" type="button">
+			<i class="ti-menu"></i>
+			<i class="ti-close"></i>
+		</button>
+		<!-- end mob button -->
+	</header>
+	<!-- end header -->
+
+	<!-- page title -->
+	<section class="section section--first section--bg" data-bg="{% static 'landingpage/img/section/section-bg.jpg' %}">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title section__title--white">Pricing</h2>
+					<p class="section__text section__text--white section__text--head">The fair approach to cloud mining pay as you mine without upfront payments</p>
+				</div>
+				<!-- end section title -->
+			</div>
+		</div>
+	</section>
+	<!-- end page title -->
+
+	<!-- features -->
+	{% comment %}<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-money"></i>
+						<h3 class="feature__title">Start with 0.005 BTC</h3>
+						<p class="feature__text">Minimum order price is 0.005 BTC for every algorithm.</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-shield"></i>
+						<h3 class="feature__title">No contracts, no risk</h3>
+						<p class="feature__text">Cancel at any time and get your remaining funds back with no cancellation fee.</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-rocket"></i>
+						<h3 class="feature__title">Fast delivery</h3>
+						<p class="feature__text">Massive hashing power in a short amount of time.</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-thumb-up"></i>
+						<h3 class="feature__title">Mine on your favorite pool</h3>
+						<p class="feature__text">You decide how and when you want to buy hashing power and which pool to direct it to.</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-pulse"></i>
+						<h3 class="feature__title">Real-time statistics</h3>
+						<p class="feature__text">Follow your workers and their performance.</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-check-box"></i>
+						<h3 class="feature__title">Valid shares only</h3>
+						<p class="feature__text">Never pay for dead, faulty configured rigs or invalid shares.</p>
+					</div>
+					<!-- end feature -->
+				</div>
+			</div>
+		</div>
+	</section>{% endcomment %}
+	<!-- end features -->
+
+	<!-- pricing -->
+	<section class="section section--border-top">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">Current Packages</h2>
+
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-10 offset-lg-1 col-xl-12 offset-xl-0">
+					<!-- price -->
+					<div class="price">
+						<h3 class="price__title">Crypto newbie or Beginner</h3>
+						<ul class="price__list">
+							<li><b>Realtime 24/7 cloud trading bot</b></li>
+							<li><b>5 bots</b></li>
+							<li><b>Indicator bot</b></li>
+							<li><br></li>
+                            <li><br></li>
+                            <li>Max 5 coins</li>
+							<li><b>Trades with 7.5minutes interval</b></li>
+						</ul>
+						<span class="price__value">$9</span>
+						<p class="price__text">every month or 6 months</p>
+						<button class="btn btn--border btn--center" type="button">Buy now</button>
+					</div>
+					<!-- end price -->
+
+					<!-- price -->
+					<div class="price">
+						<h3 class="price__title">Crypto early adopter or Standard</h3>
+						<ul class="price__list">
+							<li><b>Realtime 24/7 cloud trading bot</b></li>
+							<li><b>5 bots</b></li>
+							<li><b>Indicator bot</b></li>
+                            <li><b>Machine Learning bot</b></li>
+                            <li><br></li>
+                            <li>Unlimited coins</li>
+							<li><b>Trades with 5minutes interval</b></li>
+						</ul>
+						<span class="price__value">$49</span>
+						<p class="price__text">every month or 6 months</p>
+						<button class="btn btn--border btn--center" type="button">Buy now</button>
+					</div>
+					<!-- end price -->
+
+					<!-- price -->
+					<div class="price">
+						<h3 class="price__title">Crypto Enthusiast or Advancer</h3>
+						<ul class="price__list">
+							<li><b>Realtime 24/7 cloud trading bot</b></li>
+							<li><b>5 bots</b></li>
+							<li><b>Indicator bot</b></li>
+							<li><b>Machine Learning bot</b></li>
+                            <li><b>Arbitrage bot</b></li>
+                            <li>Unlimited coins</li>
+							<li><b>Trades with 2.5minutes interval</b></li>
+						</ul>
+						<span class="price__value">$99</span>
+						<p class="price__text">every month or 6 months</p>
+						<button class="btn btn--border btn--center" type="button">Buy now</button>
+					</div>
+					<!-- end price -->
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end pricing -->
+
+	<!-- calculator -->
+	{% comment %}<section class="section">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12">
+					<h2 class="section__title section__title--margin">How Much Will I Earn?</h2>
+				</div>
+				<!-- end section title -->
+
+				<!-- form -->
+				<div class="col-12 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<form action="#" class="calculate">
+						<div class="row">
+							<div class="col-12 col-sm-7 col-md-5 col-xl-5">
+								<input type="text" class="form__input" placeholder="Hashrate">
+							</div>
+
+							<div class="col-12 col-sm-5 col-md-3 col-xl-3">
+								<div class="form__select-wrap">
+									<select class="form__select">
+										<option value="ths">TH/s</option>
+										<option value="phs">PH/s</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="col-12 col-md-4 col-xl-4">
+								<button class="btn btn--center" type="button">Calculate</button>
+							</div>
+
+							<div class="col-12">
+								<p class="calculate__text">0.000 000 00 BTC ($0) / 0.000 000 00 BCH ($0)<br>(will change based on mining difficulty and Bitcoin price)</p>
+								<span class="calculate__info">Estimated 24 hour revenue<a href="#"><i class="ti-info"></i></a></span>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- end form -->
+			</div>
+		</div>
+	</section>{% endcomment %}
+	<!-- end calculator -->
+
+	<!-- partners -->
+	<div class="partners section--border-top section--border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<!-- partners slider -->
+					<div class="owl-carousel partners__slider">
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+
+						<!-- slider item -->
+						<div class="item">
+							<a href="#">
+								<img src="{% static 'landingpage/img/partners/partner.png' %}" alt="">
+							</a>
+						</div>
+						<!-- end slider item -->
+					</div>
+					<!-- end partners slider -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end partners -->
+
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+					<!-- logo -->
+					<div class="footer__logo">
+						<a href="index.html">
+							<img src="{% static 'landingpage/img/logo.png' %}" alt="">
+						</a>
+					</div>
+					<!-- end logo -->
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<h6 class="footer__title">Features</h6>
+					<ul class="footer__list">
+						<li><a href="#">Instant connection</a></li>
+						<li><a href="#">Instant conclusion</a></li>
+						<li><a href="#">Detailed statistics</a></li>
+						<li><a href="#">Power distribution</a></li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-sm-6 col-md-4 col-lg-3">
+					<h6 class="footer__title">Company</h6>
+					<ul class="footer__list">
+						<li><a href="#">Customers</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Press</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-sm-6 col-lg-3">
+					<h6 class="footer__title">Contact</h6>
+					<ul class="footer__list">
+						<li><a href="tel:+18002345678">+1 (800) 234-5678</a></li>
+						<li><a href="mailto:support@smartmine.com">support@smartmine.com</a></li>
+					</ul>
+					<ul class="footer__social">
+						<li><a href="#"><i class="ti-facebook"></i></a></li>
+						<li><a href="#"><i class="ti-linkedin"></i></a></li>
+						<li><a href="#"><i class="ti-instagram"></i></a></li>
+						<li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+						<li><a href="#"><i class="ti-google"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="col-12">
+					<div class="footer__copyright">
+						<small>© 2018 Smart Mine. Create by <a href="https://themeforest.net/user/dmitryvolkov/portfolio?ref=DmitryVolkov" target="_blank">Dmitry Volkov</a></small>
+
+						<ul>
+							<li><a href="#">About Smart Mine</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<script src="{% static 'landingpage/js/jquery-3.2.1.slim.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/smooth-scroll.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/main.js' %}"></script>
+</body>
+</html>

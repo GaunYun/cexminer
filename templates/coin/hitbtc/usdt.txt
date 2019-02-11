@@ -1,0 +1,6 @@
+BCH
+BTC
+ETH
+LTC
+PPC
+VERI

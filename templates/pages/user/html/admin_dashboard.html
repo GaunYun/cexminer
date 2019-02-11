@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Flatkit - HTML Version | Bootstrap 4 Web App Kit with AngularJS</title>
+  <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% load staticfiles %}
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="{% static 'user/assets/images/logo.png' %}">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="{% static 'user/assets/images/logo.png' %}">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="{% static 'user/assets/animate.css/animate.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'user/assets/glyphicons/glyphicons.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'user/assets/font-awesome/css/font-awesome.min.css' %}" type="text/css" />
+  <link rel="stylesheet" href="{% static 'user/assets/material-design-icons/material-design-icons.css' %}" type="text/css" />
+
+  <link rel="stylesheet" href="{% static 'user/assets/bootstrap/dist/css/bootstrap.min.css' %}" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="{% static 'user/assets/styles/app.css' %}" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="{% static 'user/assets/styles/font.css' %}" type="text/css" />
+</head>
+<body class="dark">
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <!-- aside -->
+  <div id="aside" class="app-aside modal nav-dropdown">
+  	<!-- fluid app aside -->
+    <div class="left navside dark dk" data-layout="column">
+  	  <div class="navbar no-radius">
+        <!-- brand -->
+        <a class="navbar-brand">
+        	<div ui-include="{% static 'user/assets/images/logo.svg' %}"></div>
+        	<img src="{% static 'user/assets/images/logo.png' %}" alt="." class="hide">
+        	<span class="hidden-folded inline">Flatkit</span>
+        </a>
+        <!-- / brand -->
+      </div>
+      <div class="hide-scroll" data-flex>
+          <nav class="scroll nav-light">
+              <ul class="nav" ui-nav>
+                <li class="nav-header hidden-folded">
+                  <small class="text-muted">Main</small>
+                </li>
+      <!-- Dashboard -->
+                <li>
+                  <a href="/dashboard" >
+                    <div class="row">
+                      <span class="nav-icon fa fa-dashboard" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Dashboard</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Users -->
+                <li>
+                  <a href="/dashboard" >
+                    <div class="row">
+                      <span class="nav-icon fa fa-user" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Users</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Bots -->
+                <li>
+                  <a href="/profit_loss">
+                    <div class="row">
+                      <span class="nav-icon fa fa-users" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Bots</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Subscription -->
+                <li>
+                  <a href="/trading">
+                    <div class="row">
+                      <span class="nav-icon fa fa-tags" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Subscription Plan</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Payment -->
+                <li>
+                  <a href="/history">
+                    <div class="row">
+                      <span class="nav-icon fa fa-money" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Payment Gateway</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Exchange information -->
+                <li>
+                  <a href="/exchange_info">
+                    <div class="row">
+                      <span class="nav-icon fa fa-key" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Exchange</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Affiliate -->
+                <li>
+                  <a href="/user_setting">
+                    <div class="row">
+                      <span class="nav-icon fa fa-ticket" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Affiiate</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Email templates -->
+                <li>
+                  <a href="/user_setting">
+                    <div class="row">
+                      <span class="nav-icon fa fa-envelope" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Email Templates</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Logs -->
+                <li>
+                  <a href="/history">
+                    <div class="row">
+                      <span class="nav-icon fa fa-bars" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Logs</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Landingpage Content -->
+                <li>
+                  <a href="/doc_manage">
+                    <div class="row">
+                      <span class="nav-icon fa fa-sitemap" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Document Manage</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Languages -->
+                <li>
+                  <a href="/user_setting">
+                    <div class="row">
+                      <span class="nav-icon fa fa-language" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Languages</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Backup -->
+                <li>
+                  <a href="/user_setting">
+                    <div class="row">
+                      <span class="nav-icon fa fa-database" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Backup</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+      <div class="b-t">
+        <div class="nav-fold">
+        	<a href="profile.html">
+        	    <span class="pull-left">
+        	      <img src="{% static 'user/assets/images/a0.jpg' %}" alt="..." class="w-40 img-circle">
+        	    </span>
+        	    <span class="clear hidden-folded p-x">
+        	      <span class="block _500">Jean Reyes</span>
+        	      <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>online</small>
+        	    </span>
+        	</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- / -->
+  
+  <!-- content -->
+  <div id="content" class="app-content box-shadow-z0" role="main">
+    <div class="app-header white box-shadow">
+        <div class="navbar navbar-toggleable-sm flex-row align-items-center">
+            <!-- Open side - Naviation on mobile -->
+            <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+              <i class="material-icons">&#xe5d2;</i>
+            </a>
+            <!-- / -->
+        
+            <!-- Page title - Bind to $state's title -->
+            <div class="mb-0 h5 no-wrap" ng-bind="$state.current.data.title" id="pageTitle"></div>
+        
+            <!-- navbar collapse -->
+            <div class="collapse navbar-collapse" id="collapse">
+              <!-- link and dropdown -->
+              {% comment %}<ul class="nav navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href data-toggle="dropdown">
+                    <i class="fa fa-fw fa-plus text-muted"></i>
+                    <span>New</span>
+                  </a>
+                  <div ui-include="{% static 'user/views/blocks/dropdown.new.html' %}"></div>
+                </li>
+              </ul>{% endcomment %}
+              <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <h3 style="margin-bottom: 0px">Dashboard</h3>
+                </li>
+              </ul>
+              <div ui-include="{% static 'user/views/blocks/navbar.form.html' %}"></div>
+              <!-- / -->
+            </div>
+            <!-- / navbar collapse -->
+        
+            <!-- navbar right -->
+            <ul class="nav navbar-nav ml-auto flex-row">
+              <li class="nav-item dropdown pos-stc-xs">
+                <a class="nav-link mr-2" href data-toggle="dropdown">
+                  <i class="material-icons">&#xe7f5;</i>
+                  <span class="label label-sm up warn">3</span>
+                </a>
+                <div ui-include="{% static 'user/views/blocks/dropdown.notification.html' %}"></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link p-0 clear" href="#" data-toggle="dropdown">
+                  <span class="avatar w-32">
+                    <img src="{% static 'user/assets/images/a0.jpg' %}" alt="...">
+                    <i class="on b-white bottom"></i>
+                  </span>
+                </a>
+                <div ui-include="{% static 'user/views/blocks/dropdown.user.html' %}"></div>
+              </li>
+              <li class="nav-item hidden-md-up">
+                <a class="nav-link pl-2" data-toggle="collapse" data-target="#collapse">
+                  <i class="material-icons">&#xe5d4;</i>
+                </a>
+              </li>
+            </ul>
+            <!-- / navbar right -->
+        </div>
+    </div>
+    <div class="app-footer">
+      <div class="p-2 text-xs">
+        <div class="pull-right text-muted py-1">
+          &copy; Copyright <strong>Flatkit</strong> <span class="hidden-xs-down">- Built with Love v1.1.3</span>
+          <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
+        </div>
+        <div class="nav">
+          <a class="nav-link" href="{% static 'user/' %}">About</a>
+          <a class="nav-link" href="http://themeforest.net/user/flatfull/portfolio?ref=flatfull">Get it</a>
+        </div>
+      </div>
+    </div>
+    <div ui-view class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+<div class="p-a white lt box-shadow">
+	<div class="row" style="">
+		<div class="col-sm-6">
+			<h4 class="mb-0 _300">Welcome to Flatkit</h4>
+			<small class="text-muted">Bootstrap <strong>4</strong> Web App Kit with AngularJS</small>
+		</div>
+		<div class="col-sm-6 text-sm-right">
+			<div class="m-y-sm">
+				<span class="m-r-sm">Start manage:</span>
+				<div class="btn-group dropdown">
+		          <button class="btn white btn-sm ">Projects</button>
+		          <button class="btn white btn-sm dropdown-toggle" data-toggle="dropdown"></button>
+		          <div class="dropdown-menu dropdown-menu-scale pull-right">
+		            <a class="dropdown-item" href>Members</a>
+		            <a class="dropdown-item" href>Tasks</a>
+		            <a class="dropdown-item" href>Inbox</a>
+		            <div class="dropdown-divider"></div>
+		            <a class="dropdown-item">Profile</a>
+		          </div>
+		        </div>
+	        </div>
+		</div>
+	</div>
+</div>
+<div class="padding">
+	<div class="row">
+		<div class="col-xs-12 col-sm-4">
+	        <div class="box p-a">
+	          <div class="pull-left m-r">
+	            {% comment %}<span class="w-48 rounded  accent">
+	              <i class="material-icons">&#xe151;</i>
+	            </span>{% endcomment %}
+                <span class="w-48 rounded fa fa-exchange accent">
+                      </span>
+	          </div>
+	          <div class="clear">
+	            <h5 class="m-0 text-lg _300"><a href>Portfolio <span class="text-sm">(% Change)</span></a></h5>
+	            <small class="text-muted">$27.6(1.26%)</small>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="col-xs-6 col-sm-4">
+	        <div class="box p-a">
+	          <div class="pull-left m-r">
+	            <span class="w-48 rounded fa fa-desktop success">
+                </span>
+	          </div>
+	          <div class="clear">
+	            <h5 class="m-0 text-lg _300"><a href>Outstanding Orders</a></h5>
+	            <small class="text-muted">8 Sell, 6 Buy.</small>
+	          </div>
+	        </div>
+	    </div>
+	    <div class="col-xs-6 col-sm-4">
+	        <div class="box p-a">
+	          <div class="pull-left m-r">
+	            <span class="w-48 rounded fa fa-user warn">
+                      </span>
+	          </div>
+	          <div class="clear">
+	            <h5 class="m-0 text-lg _300"><a href>Number of Running Bot</a></h5>
+	            <small class="text-muted">2 Indicator Bot, 1 ML Bot.</small>
+	          </div>
+	        </div>
+	    </div>
+	</div>
+	<!--  Portfolil and   -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="box">
+          <div class="box-header text-info">
+            <h3>Portfolio of Each Coins(%)</h3>
+            <small class="block text-muted"></small>
+          </div>
+          <div class="box-body">
+            <div ui-jp="chart" ui-options="{
+                tooltip : {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data:['BTC','ETH','XMR']
+                },
+                calculable : true,
+                xAxis : [
+                    {
+                        type : 'category',
+                        boundaryGap : false,
+                        data : ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+                    }
+                ],
+                yAxis : [
+                    {
+                        type : 'value'
+                    }
+                ],
+                series : [
+                    {
+                        name:'XMR',
+                        type:'line',
+                        smooth:true,
+                        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                        data:[1, 1.2, 21, 5.4, 26, 83, 71]
+                    },
+                    {
+                        name:'ETH',
+                        type:'line',
+                        smooth:true,
+                        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                        data:[3, 18.2, 43.4, 79.1, 3.9, 3, 1]
+                    },
+                    {
+                        name:'BTC',
+                        type:'line',
+                        smooth:true,
+                        itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                        data:[92, 82, 60, 23.4, 12, 9, 2]
+                    }
+                ]
+
+            }" style="height:300px" >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="box">
+          <div class="box-header text-info">
+            <h3>Number of Orders</h3>
+            <small class="block text-muted"></small>
+          </div>
+          <div class="box-body">
+            <div ui-jp="chart" ui-options=" {
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['Sell','Buy']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      data : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+                  }
+              ],
+              yAxis : [
+                  {
+                      type : 'value'
+                  }
+              ],
+              series : [
+                  {
+                      name:'Sell',
+                      type:'bar',
+                      data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                      markPoint : {
+                          data : [
+                              {type : 'max', name: 'Max'},
+                              {type : 'min', name: 'Min'}
+                          ]
+                      },
+                      markLine : {
+                          data : [
+                              {type : 'average', name: 'Average'}
+                          ]
+                      }
+                  },
+                  {
+                      name:'Buy',
+                      type:'bar',
+                      data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                      markPoint : {
+                          data : [
+                              {name : 'Max', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                              {name : 'Min', value : 2.3, xAxis: 11, yAxis: 3}
+                          ]
+                      },
+                      markLine : {
+                          data : [
+                              {type : 'average', name : 'Average'}
+                          ]
+                      }
+                  }
+              ]
+            }" style="height:300px" >
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	<!--  Coin Balance  -->
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="box">
+          <div class="box-header text-success">
+          <h2>Coin Balance</h2>
+          <small>Total Balance of each coins on each Exchange</small>
+        </div>
+          <div class="table-responsive">
+          <table class="table table-bordered m-0">
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>Binance</th>
+            <th>Cryptopia</th>
+            <th>Cex.io</th>
+            <th>Bittrex</th>
+            <th>Hitbtc</th>
+            <th>Okex</th>
+            <th>Quoinex</th>
+            <th>Kraken</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BTC</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ETH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>XMR</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="box">
+          <div class="row">
+            <div class="col-md-5 p-y-sm">
+              <i id="sell_order" class="material-icons md-48 text-success">&#xe2c6;</i>
+            </div>
+            <div class="col-md-7 p-y-sm">
+              <p id="sell_text" class="text-success" style="margin-bottom: 0rem;font-size: 12px">Selling is <strong>Enabled</strong></p>
+              <label id="sell_switch" class="ui-switch" >
+                <input type="checkbox" style="margin-top: 0rem" checked>
+                <i></i>
+              </label>
+            </div>
+          </div>
+          <div class="box-divider m-0"></div>
+          <div class="row">
+            <div class="col-md-5 p-y-sm">
+              <i id="buy_order" class="material-icons md-48 text-success">&#xe2c4;</i>
+            </div>
+            <div class="col-md-7 p-y-sm">
+              <p id="buy_text" class="text-success" style="margin-bottom: 0rem;font-size: 12px">Buying is <strong>Enabled</strong></p>
+              <label id="buy_switch" class="ui-switch" >
+                <input type="checkbox" style="margin-top: 0rem" checked>
+                <i></i>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  Order Percent and Bot Performance -->
+    <div class="row">
+	  <div class="col-sm-6">
+        <div class="box">
+          <div class="box-header text-info">
+            <h3>Successful Order Percent</h3>
+            <small class="block text-muted"></small>
+          </div>
+          <div class="box-body">
+            <div ui-jp="chart" ui-options=" {
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['Sell','Buy']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      data : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+                  }
+              ],
+              yAxis : [
+                  {
+                      type : 'value'
+                  }
+              ],
+              series : [
+                  {
+                      name:'Sell',
+                      type:'bar',
+                      data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3],
+                      markPoint : {
+                          data : [
+                              {type : 'max', name: 'Max'},
+                              {type : 'min', name: 'Min'}
+                          ]
+                      }
+
+                  },
+                  {
+                      name:'Buy',
+                      type:'bar',
+                      data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3],
+                      markPoint : {
+                          data : [
+                              {name : 'Max', value : 182.2, xAxis: 7, yAxis: 183, symbolSize:18},
+                              {name : 'Min', value : 2.3, xAxis: 11, yAxis: 3}
+                          ]
+                      }
+                  }
+              ]
+            }" style="height:300px" >
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="col-sm-6">
+        <div class="box">
+          <div class="box-header text-info">
+            <h3>Bot Performance</h3>
+            <small class="block text-muted"></small>
+          </div>
+          <div class="box-body">
+            <div ui-jp="chart" ui-options=" {
+              tooltip : {
+                  trigger: 'axis'
+              },
+              legend: {
+                  data:['Profit','Loss']
+              },
+              calculable : true,
+              xAxis : [
+                  {
+                      type : 'category',
+                      data : ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
+                  }
+              ],
+              yAxis : [
+                  {
+                      type : 'value'
+                  }
+              ],
+              series : [
+                  {
+                      name:'Profit',
+                      type:'bar',
+                      data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
+                  },
+                  {
+                      name:'Loss',
+                      type:'bar',
+                      data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
+                  }
+              ]
+            }" style="height:300px" >
+            </div>
+          </div>
+        </div>
+      </div>
+	</div>
+	<div class="row">
+	  <div class="col-sm-12">
+        <div class="box">
+          <div class="box-header text-success">
+            <h2>Transaction History</h2>
+            <small>Total Balance of each coins on each Exchange</small>
+          </div>
+          <div class="table-responsive">
+          <table class="table table-bordered m-0">
+        <thead>
+          <tr>
+            <th>Coin</th>
+            <th>Binance</th>
+            <th>Cryptopia</th>
+            <th>Cex.io</th>
+            <th>Bittrex</th>
+            <th>Hitbtc</th>
+            <th>Okex</th>
+            <th>Quoinex</th>
+            <th>Kraken</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>BTC</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ETH</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>XMR</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+        </div>
+      </div>
+	</div>
+</div>
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- theme switcher -->
+  {% comment %}<div id="switcher">
+    <div class="switcher box-color dark-white text-color" id="sw-theme">
+      <a href ui-toggle-class="active" target="#sw-theme" class="box-color dark-white text-color sw-btn">
+        <i class="fa fa-gear"></i>
+      </a>
+      <div class="box-header">
+        <a href="https://themeforest.net/item/flatkit-app-ui-kit/13231484?ref=flatfull" class="btn btn-xs rounded danger pull-right">BUY</a>
+        <h2>Theme Switcher</h2>
+      </div>
+      <div class="box-divider"></div>
+      <div class="box-body">
+        <p class="hidden-md-down">
+          <label class="md-check m-y-xs"  data-target="folded">
+            <input type="checkbox">
+            <i class="green"></i>
+            <span class="hidden-folded">Folded Aside</span>
+          </label>
+          <label class="md-check m-y-xs" data-target="boxed">
+            <input type="checkbox">
+            <i class="green"></i>
+            <span class="hidden-folded">Boxed Layout</span>
+          </label>
+          <label class="m-y-xs pointer" ui-fullscreen>
+            <span class="fa fa-expand fa-fw m-r-xs"></span>
+            <span>Fullscreen Mode</span>
+          </label>
+        </p>
+        <p>Colors:</p>
+        <p data-target="themeID">
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'primary', accent:'accent', warn:'warn'}">
+            <input type="radio" name="color" value="1">
+            <i class="primary"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'accent', accent:'cyan', warn:'warn'}">
+            <input type="radio" name="color" value="2">
+            <i class="accent"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'warn', accent:'light-blue', warn:'warning'}">
+            <input type="radio" name="color" value="3">
+            <i class="warn"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'success', accent:'teal', warn:'lime'}">
+            <input type="radio" name="color" value="4">
+            <i class="success"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'info', accent:'light-blue', warn:'success'}">
+            <input type="radio" name="color" value="5">
+            <i class="info"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'blue', accent:'indigo', warn:'primary'}">
+            <input type="radio" name="color" value="6">
+            <i class="blue"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'warning', accent:'grey-100', warn:'success'}">
+            <input type="radio" name="color" value="7">
+            <i class="warning"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'danger', accent:'grey-100', warn:'grey-300'}">
+            <input type="radio" name="color" value="8">
+            <i class="danger"></i>
+          </label>
+        </p>
+        <p>Themes:</p>
+        <div data-target="bg" class="row no-gutter text-u-c text-center _600 clearfix">
+          <label class="p-a col-sm-6 light pointer m-0">
+            <input type="radio" name="theme" value="" hidden>
+            Light
+          </label>
+          <label class="p-a col-sm-6 grey pointer m-0">
+            <input type="radio" name="theme" value="grey" hidden>
+            Grey
+          </label>
+          <label class="p-a col-sm-6 dark pointer m-0">
+            <input type="radio" name="theme" value="dark" hidden>
+            Dark
+          </label>
+          <label class="p-a col-sm-6 black pointer m-0">
+            <input type="radio" name="theme" value="black" hidden>
+            Black
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="switcher box-color black lt" id="sw-demo">
+      <a href ui-toggle-class="active" target="#sw-demo" class="box-color black lt text-color sw-btn">
+        <i class="fa fa-list text-white"></i>
+      </a>
+      <div class="box-header">
+        <h2>Demos</h2>
+      </div>
+      <div class="box-divider"></div>
+      <div class="box-body">
+        <div class="row no-gutter text-u-c text-center _600 clearfix">
+          <a href="dashboard.html"
+            class="p-a col-sm-6 primary">
+            <span class="text-white">Default</span>
+          </a>
+          <a href="dashboard.0.html"
+            class="p-a col-sm-6 success">
+            <span class="text-white">Zero</span>
+          </a>
+          <a href="dashboard.1.html"
+            class="p-a col-sm-6 blue">
+            <span class="text-white">One</span>
+          </a>
+          <a href="dashboard.2.html"
+            class="p-a col-sm-6 warn">
+            <span class="text-white">Two</span>
+          </a>
+          <a href="dashboard.3.html"
+            class="p-a col-sm-6 danger">
+            <span class="text-white">Three</span>
+          </a>
+          <a href="dashboard.4.html"
+            class="p-a col-sm-6 green">
+            <span class="text-white">Four</span>
+          </a>
+          <a href="dashboard.5.html"
+            class="p-a col-sm-6 info">
+            <span class="text-white">Five</span>
+          </a>
+          <div 
+            class="p-a col-sm-6 lter">
+            <span class="text">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>{% endcomment %}
+  <!-- / -->
+
+<!-- ############ LAYOUT END-->
+
+  </div>
+
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+  <script src="{% static 'user/libs/jquery/jquery/dist/jquery.js' %}"></script>
+<!-- Bootstrap -->
+  <script src="{% static 'user/libs/jquery/tether/dist/js/tether.min.js' %}"></script>
+  <script src="{% static 'user/libs/jquery/bootstrap/dist/js/bootstrap.js' %}"></script>
+<!-- core -->
+  <script src="{% static 'user/libs/jquery/underscore/underscore-min.js' %}"></script>
+  <script src="{% static 'user/libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js' %}"></script>
+  <script src="{% static 'user/libs/jquery/PACE/pace.min.js' %}"></script>
+{% comment %}<!-- flot -->
+  <script src="{% static 'user/libs/jquery/flot/jquery.flot.js' %}"></script>
+  <script src="{% static 'user/libs/jquery/flot/jquery.flot.pie.js' %}"></script>
+  <script src="{% static 'user/libs/jquery/flot/jquery.flot.resize.js' %}"></script>
+<!-- flot-spline -->
+  <script src="{% static 'user/libs/jquery/flot-spline/js/jquery.flot.spline.min.js' %}"></script>
+<!-- flot.orderbars -->
+  <script src="{% static 'user/libs/jquery/flot.orderbars/js/jquery.flot.orderBars.js' %}"></script>
+<!-- flot.tooltip -->
+  <script src="{% static 'user/libs/jquery/flot.tooltip/js/jquery.flot.tooltip.min.js' %}"></script>
+<!-- jquery.sparkline -->
+  <script src="{% static 'user/libs/jquery/jquery.sparkline/dist/jquery.sparkline.retina.js' %}"></script>
+<!-- screenfull -->
+  <script src="{% static 'user/libs/jquery/screenfull/dist/screenfull.min.js' %}"></script>{% endcomment %}
+
+  <script src="{% static 'user/scripts/config.lazyload.js' %}"></script>
+
+  <script src="{% static 'user/scripts/palette.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-load.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-jp.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-include.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-device.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-form.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-nav.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-screenfull.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-scroll-to.js' %}"></script>
+  <script src="{% static 'user/scripts/ui-toggle-class.js' %}"></script>
+
+  <script src="{% static 'user/scripts/app.js' %}"></script>
+
+  <!-- ajax -->
+  <script src="{% static 'user/libs/jquery/jquery-pjax/jquery.pjax.js' %}"></script>
+  <script src="{% static 'user/scripts/ajax.js' %}"></script>
+<!-- endbuild -->
+  <script>
+    $(document).ready(function(){
+      $("#sell_switch").on('click', function(){console.log('click');
+
+      if($("#sell_order").hasClass("text-success"))
+        {
+          $("#sell_order").removeClass("text-success");
+          $("#sell_order").addClass("text-danger");
+        }
+      //if($("#sell_order").hasClass("text-danger"))
+      else
+        {
+          $("#sell_order").removeClass("text-danger");
+          $("#sell_order").addClass("text-success");
+        }
+        //console.log($("#sell_text strong").text() );
+      if($("#sell_text strong").text() =="Enabled")
+      {
+          $("#sell_text strong").text("Disabled");
+          $("#sell_text").removeClass("text-success");
+          $("#sell_text").addClass("text-danger");
+      }
+      //if($("#sell_text strong").text() =="Disabled")
+      else
+      {
+          $("#sell_text strong").text("Enabled");
+          $("#sell_text").removeClass("text-danger");
+          $("#sell_text").addClass("text-success");
+      }
+      });
+
+      $("#buy_switch").on('click', function(){console.log('click');
+
+      if($("#buy_order").hasClass("text-success"))
+        {
+          $("#buy_order").removeClass("text-success");
+          $("#buy_order").addClass("text-danger");
+        }
+      //if($("#buy_order").hasClass("text-danger"))
+      else
+        {
+          $("#buy_order").removeClass("text-danger");
+          $("#buy_order").addClass("text-success");
+        }
+        //console.log($("#buy_text strong").text() );
+      if($("#buy_text strong").text() =="Enabled")
+      {
+          $("#buy_text strong").text("Disabled");
+          $("#buy_text").removeClass("text-success");
+          $("#buy_text").addClass("text-danger");
+      }
+      //if($("#buy_text strong").text() =="Disabled")
+      else
+      {
+          $("#buy_text strong").text("Enabled");
+          $("#buy_text").removeClass("text-danger");
+          $("#buy_text").addClass("text-success");
+      }
+      });
+    });
+  </script>
+</body>
+</html>

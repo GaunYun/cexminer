@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Automated Crypto Trading Bot - Cexminer.nz</title>
+  <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
+  <link rel="apple-touch-icon" href="../static/user/assets/images/logo.png">
+  <meta name="apple-mobile-web-app-title" content="Flatkit">
+  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="196x196" href="../static/user/assets/images/logo.png">
+  
+  <!-- style -->
+  <link rel="stylesheet" href="../static/user/assets/animate.css/animate.min.css" type="text/css" />
+  <link rel="stylesheet" href="../static/user/assets/glyphicons/glyphicons.css" type="text/css" />
+  <link rel="stylesheet" href="../static/user/assets/font-awesome/css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="../static/user/assets/material-design-icons/material-design-icons.css" type="text/css" />
+
+  <link rel="stylesheet" href="../static/user/assets/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
+  <!-- build:css ../assets/styles/app.min.css -->
+  <link rel="stylesheet" href="../static/user/assets/styles/app.css" type="text/css" />
+  <!-- endbuild -->
+  <link rel="stylesheet" href="../static/user/assets/styles/font.css" type="text/css" />
+</head>
+<body class="dark">
+  <div class="app" id="app">
+
+<!-- ############ LAYOUT START-->
+
+  <!-- aside -->
+  <div id="aside" class="app-aside modal nav-dropdown">
+  	<!-- fluid app aside -->
+    <div class="left navside dark dk" data-layout="column">
+  	  <div class="navbar no-radius">
+        <!-- brand -->
+        <a class="navbar-brand">
+        	{% comment %}<div ui-include="'../assets/images/logo.svg'"></div>{% endcomment %}
+        	<img src="../static/landingpage/img/logo.png" alt="." >
+        	{% comment %}<span class="hidden-folded inline">Flatkit</span>{% endcomment %}
+        </a>
+        <!-- / brand -->
+      </div>
+      <div class="hide-scroll" data-flex>
+          <nav class="scroll nav-light">
+            <ul class="nav" ui-nav>
+                <li class="nav-header hidden-folded">
+                  <small class="text-muted">Main</small>
+                </li>
+      <!-- Dashboard -->
+                <li>
+                  <a href="/dashboard" >
+                    <div class="row">
+                      <span class="nav-icon fa fa-dashboard" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Dashboard</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Profit and Loss statement -->
+                <li>
+                  <a href="/profit_loss">
+                    <div class="row">
+                      <span class="nav-icon fa fa-exchange" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Profit and Loss</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Autotrade System -->
+                <li>
+                  <a href="/trading">
+                    <div class="row">
+                      <span class="nav-icon fa fa-tasks" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Autotrade System</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Trading History -->
+                <li>
+                  <a href="/history">
+                    <div class="row">
+                      <span class="nav-icon fa fa-bars" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Trading History</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- Exchange information -->
+                <li>
+                  <a href="/exchange_info">
+                    <div class="row">
+                      <span class="nav-icon fa fa-key" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">Exchange Info</span>
+                    </div>
+                  </a>
+                </li>
+      <!-- User Settings -->
+                <li>
+                  <a href="/user_setting">
+                    <div class="row">
+                      <span class="nav-icon fa fa-sun-o" style="margin-left: 10px">
+                      </span>
+                      <span class="nav-text">User Settings</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+          </nav>
+      </div>
+      {% comment %}<div class="b-t">
+        <div class="nav-fold">
+        	<a href="profile.html">
+        	    <span class="pull-left">
+        	      <img src="../static/user/assets/images/a0.jpg" alt="..." class="w-40 img-circle">
+        	    </span>
+        	    <span class="clear hidden-folded p-x">
+        	      <span class="block _500">Jean Reyes</span>
+        	      <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>online</small>
+        	    </span>
+        	</a>
+        </div>
+      </div>{% endcomment %}
+    </div>
+  </div>
+  <!-- / -->
+  
+  <!-- content -->
+  <div id="content" class="app-content box-shadow-z0" role="main">
+    <div class="app-header white box-shadow">
+        <div class="navbar navbar-toggleable-sm flex-row align-items-center">
+            <!-- Open side - Naviation on mobile -->
+            <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+              <i class="material-icons">&#xe5d2;</i>
+            </a>
+            <!-- / -->
+        
+            <!-- Page title - Bind to $state's title -->
+            <div class="mb-0 h5 no-wrap" ng-bind="$state.current.data.title" id="pageTitle"></div>
+        
+            <!--  Content Title  -->
+            <div class="mb-2">
+              <h3 style="margin-bottom: 0px">User Settings</h3>
+              <div ui-include="'../views/blocks/navbar.form.html'"></div>
+            </div>
+            <!-- / navbar collapse -->
+        
+            <!-- navbar right -->
+            {% comment %}<ul class="nav navbar-nav ml-auto flex-row">
+              <li class="nav-item dropdown pos-stc-xs">
+                <a class="nav-link mr-2" href data-toggle="dropdown">
+                  <i class="material-icons">&#xe7f5;</i>
+                  <span class="label label-sm up warn">3</span>
+                </a>
+                <div ui-include="'../views/blocks/dropdown.notification.html'"></div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link p-0 clear" href="#" data-toggle="dropdown">
+                  <span class="avatar w-32">
+                    <img src="../static/user/assets/images/a0.jpg" alt="...">
+                    <i class="on b-white bottom"></i>
+                  </span>
+                </a>
+                <div ui-include="'../views/blocks/dropdown.user.html'"></div>
+              </li>
+              <li class="nav-item hidden-md-up">
+                <a class="nav-link pl-2" data-toggle="collapse" data-target="#collapse">
+                  <i class="material-icons">&#xe5d4;</i>
+                </a>
+              </li>
+            </ul>{% endcomment %}
+            <!-- / navbar right -->
+        </div>
+    </div>
+    <div class="app-footer">
+      <div class="p-2 text-xs">
+        <div class="pull-right text-muted py-1">
+          &copy; Copyright <strong>Flatkit</strong> <span class="hidden-xs-down">- Built with Love v1.1.3</span>
+          <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
+        </div>
+        <div class="nav">
+          <a class="nav-link" href="../static/user/">About</a>
+          <a class="nav-link" href="http://themeforest.net/user/flatfull/portfolio?ref=flatfull">Get it</a>
+        </div>
+      </div>
+    </div>
+    <div ui-view class="app-body" id="view">
+
+<!-- ############ PAGE START-->
+<div class="row no-gutter">
+  <div class="col-sm-3 col-lg-2">
+    <div class="p-y">
+      <div class="nav-active-border left b-primary">
+        <ul class="nav nav-sm flex-column">
+          <li class="nav-item">
+              <a class="nav-link block active" href data-toggle="tab" data-target="#tab-1"><h6>Profile</h6></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link block" href data-toggle="tab" data-target="#tab-2"><h6>Account Settings</h6></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link block" href data-toggle="tab" data-target="#tab-3"><h6>Subscription Plan</h6></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link block" href data-toggle="tab" data-target="#tab-4"><h6>Affiliate</h6></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9 col-lg-10 light lt">
+    <div class="tab-content pos-rlt">
+      <div class="tab-pane active" id="tab-1">
+          <div class="p-a-md dker _600"><h5>Public profile</h5></div>
+        <form role="form" class="p-a-md col-md-6">
+    <!--  Load Profile Picture  -->
+          {% comment %}<div class="form-group">
+            <label>Profile picture</label>
+            <div class="form-file">
+              <input type="file">
+              <button class="btn white">Upload new picture</button>
+            </div>
+          </div>{% endcomment %}
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="first_name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="last_name" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" name="email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input type="text" name="address" class="form-control">
+          </div>
+          {% comment %}<div class="checkbox">
+            <label class="ui-check">
+              <input type="checkbox"><i class="dark-white"></i> Available for hire
+            </label>
+          </div>{% endcomment %}
+          <button type="submit" class="btn btn-info m-t">Update</button>
+        </form>
+      </div>
+      <div class="tab-pane" id="tab-2">
+          <div class="p-a-md dker _600"><h5>Account settings</h5></div>
+        <form role="form" class="p-a-md col-md-6">
+          <div class="form-group">
+            <label>User ID</label>
+            <input type="text" name="user_id" disabled class="form-control" value="">
+          </div>
+          {% comment %}<div class="form-group">
+            <label>Secret Key</label>
+            <input type="text" disabled class="form-control" value="">
+          </div>{% endcomment %}
+          <div class="form-group">
+            <label>Old Password</label>
+            <input type="password" name="old_pwd" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>New Password</label>
+            <input type="password" name="new_pwd" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" name="confrim_pwd" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-info m-t">Update</button>
+        </form>
+      </div>
+      <div class="tab-pane" id="tab-3">
+          <div class="p-a-md dker _600"><h5>Subscription Plan</h5></div>
+        <form role="form" class="p-a-md col-md-12">
+          <div class="row text-left" style="margin-bottom: 1.5rem">
+            <h6>Payment</h6>
+          </div>
+          <div class="p-x-lg"  >
+            <div class="row">
+              {% comment %}<div class="col-sm-12 row">{% endcomment %}
+                {% comment %}<div class="col-sm-4">{% endcomment %}
+
+              <form action="your-server-side-code" method="POST">
+                <script
+                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="pk_test_1WpT7Ka7tPBgYhQ96tLTVMEJ"
+                  data-amount="900"
+                  data-name="Stripe.com"
+                  data-description="Payment for Month Fee"
+                  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                  data-locale="auto"
+                  data-zip-code="true">
+                </script>
+              </form>
+                  {% comment %}<a href="/exchange_info">
+                    <img src="../static/user/assets/images/paypal.png" onmousemove="height='56';width='91'" onmouseleave="height='48';width='78'" height="48" width="78">
+                  </a>
+                  <a href="/exchange_info">
+                    <img src="../static/user/assets/images/mastercard.png" onmousemove="height='56';width='91'" onmouseleave="height='48';width='78'" height="48" width="78">
+                  </a>
+                  <a href="/exchange_info">
+                    <img src="../static/user/assets/images/visa.png" onmousemove="height='56';width='91'" onmouseleave="height='48';width='78'" height="48" width="78">
+                  </a>
+                  <a href="/exchange_info">
+                    <img src="../static/user/assets/images/mestro.png" onmousemove="height='56';width='91'" onmouseleave="height='48';width='78'" height="48" width="78">
+                  </a>
+                   <a href="/exchange_info">
+                    <img src="../static/user/assets/images/american-express.png" onmousemove="height='56';width='91'" onmouseleave="height='48';width='78'" height="48" width="78">
+                  </a>
+                  <a href="/exchange_info">
+                    <img src="../static/user/assets/images/cirrus.png" onmousemove="height='56';width='91'" onmouseleave="height='48';width='78'" height="48" width="78">
+                  </a>{% endcomment %}
+                {% comment %}</div>{% endcomment %}
+              {% comment %}</div>{% endcomment %}
+            </div>
+          </div>
+          <div class="row text-left" style="margin-top: 2rem; margin-bottom: 1.5rem; padding-left: 1.5rem">
+            <h6>Membership</h6>
+          </div>
+          <div class="p-x-lg">
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="row no-gutter">
+                  <div class="col-sm-4 col-sm-push-5">
+                    <div class="box m-t-n">
+                      <div class="box-body text-center r-t primary">
+                        <h6 class="p-v-sm m-0 m-t">Newbie</h6>
+                        <h3 class="m-0 m-l m-v">
+                          <sup>$</sup>
+                          <span class="text-2x">9</span>
+                          <span class="text-xs">/ month</span>
+                        </h3>
+                      </div>
+                      <ul class="list b-t b-b m-0 no-radius">
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Realtime 24/7 cloud Trading Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>5 Bots
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Indicators Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-remove text-warn m-r-xs"></i>Machine Learning Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-remove text-warn m-r-xs"></i>Arbitrage Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Max 5 Coins
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Trades with 7.5minutes interval
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="text-center p-a-md">
+                        <a href class="btn btn-block btn-lg primary">Using Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-sm-push-5">
+                    <div class="box m-t-n">
+                      <div class="box-body text-center r-t info">
+                        <h6 class="p-v-sm m-0 m-t">Adopter</h6>
+                        <h3 class="m-0 m-l m-v">
+                          <sup>$</sup>
+                          <span class="text-2x">49</span>
+                          <span class="text-xs">/ month</span>
+                        </h3>
+                      </div>
+                      <ul class="list b-t b-b m-0 no-radius">
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Realtime 24/7 cloud Trading Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-info m-r-xs"></i>10 Bots
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Indicators Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Machine Learning Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-remove text-warn m-r-xs"></i>Arbitrage Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-info m-r-xs"></i>Unlimited Coins
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-info m-r-xs"></i>Trades with 5minutes interval
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="text-center p-a-md">
+                        <a href class="btn btn-block btn-lg info">Upgrade</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 col-sm-push-5">
+                    <div class="box m-t-n">
+                      <div class="box-body text-center r-t danger">
+                        <h6 class="p-v-sm m-0 m-t">Enthusiast</h6>
+                        <h3 class="m-0 m-l m-v">
+                          <sup>$</sup>
+                          <span class="text-2x">99</span>
+                          <span class="text-xs">/ month</span>
+                        </h3>
+                      </div>
+                      <ul class="list b-t b-b m-0 no-radius">
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Realtime 24/7 cloud Trading Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-danger m-r-xs"></i>20 Bots
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Indicators Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Machine Learning Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-success m-r-xs"></i>Arbitrage Bot
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-danger m-r-xs"></i>Unlimited Coins
+                          </div>
+                        </li>
+                        <li class="list-item">
+                          <div class="list-body">
+                            <i class="fa fa-check text-danger m-r-xs"></i>Trades with 2.5minutes interval
+                          </div>
+                        </li>
+                      </ul>
+                      <div class="text-center p-a-md">
+                        <a href class="btn btn-block btn-lg danger">Upgrade</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="tab-pane" id="tab-4">
+          <div class="p-a-md dker _600"><h5>Affiliate</h5></div>
+        <form role="form" class="p-a-md col-md-6">
+          <div class="form-group">
+            <label>User ID</label>
+            <input type="text" name="user_id" disabled class="form-control" value="">
+          </div>
+          {% comment %}<div class="form-group">
+            <label>Secret Key</label>
+            <input type="text" disabled class="form-control" value="">
+          </div>{% endcomment %}
+          <div class="form-group">
+            <label>Old Password</label>
+            <input type="password" name="old_pwd" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>New Password</label>
+            <input type="password" name="new_pwd" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" name="confrim_pwd" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-info m-t">Update</button>
+        </form>
+      </div>
+      <div class="tab-pane" id="tab-5">
+          <div class="p-a-md dker _600"><h5>Affiliate</h5></div>
+        <div class="p-a-md">
+          <div class="clearfix m-b-lg">
+            <form role="form" class="col-md-6 p-a-0">
+              <div class="form-group">
+                <label>Old Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>New Password</label>
+                <input type="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label>New Password Again</label>
+                <input type="password" class="form-control">
+              </div>
+              <button type="submit" class="btn btn-info m-t">Update</button>
+            </form>
+          </div>
+
+          <p><strong>Delete account?</strong></p>
+          <button type="submit" class="btn btn-danger m-t" data-toggle="modal" data-target="#modal">Delete Account</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- .modal -->
+<div id="modal" class="modal fade animate black-overlay" data-backdrop="false">
+  <div class="row-col h-v">
+    <div class="row-cell v-m">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content flip-y">
+          <div class="modal-body text-center">          
+            <p class="p-y m-t"><i class="fa fa-remove text-warning fa-3x"></i></p>
+            <p>Are you sure to delete your account?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn white p-x-md" data-dismiss="modal">No</button>
+            <button type="button" class="btn btn-danger p-x-md" data-dismiss="modal">Yes</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / .modal -->
+
+<!-- ############ PAGE END-->
+
+    </div>
+  </div>
+  <!-- / -->
+
+  <!-- theme switcher -->
+  {% comment %}<div id="switcher">
+    <div class="switcher box-color dark-white text-color" id="sw-theme">
+      <a href ui-toggle-class="active" target="#sw-theme" class="box-color dark-white text-color sw-btn">
+        <i class="fa fa-gear"></i>
+      </a>
+      <div class="box-header">
+        <a href="https://themeforest.net/item/flatkit-app-ui-kit/13231484?ref=flatfull" class="btn btn-xs rounded danger pull-right">BUY</a>
+        <h2>Theme Switcher</h2>
+      </div>
+      <div class="box-divider"></div>
+      <div class="box-body">
+        <p class="hidden-md-down">
+          <label class="md-check m-y-xs"  data-target="folded">
+            <input type="checkbox">
+            <i class="green"></i>
+            <span class="hidden-folded">Folded Aside</span>
+          </label>
+          <label class="md-check m-y-xs" data-target="boxed">
+            <input type="checkbox">
+            <i class="green"></i>
+            <span class="hidden-folded">Boxed Layout</span>
+          </label>
+          <label class="m-y-xs pointer" ui-fullscreen>
+            <span class="fa fa-expand fa-fw m-r-xs"></span>
+            <span>Fullscreen Mode</span>
+          </label>
+        </p>
+        <p>Colors:</p>
+        <p data-target="themeID">
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'primary', accent:'accent', warn:'warn'}">
+            <input type="radio" name="color" value="1">
+            <i class="primary"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'accent', accent:'cyan', warn:'warn'}">
+            <input type="radio" name="color" value="2">
+            <i class="accent"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'warn', accent:'light-blue', warn:'warning'}">
+            <input type="radio" name="color" value="3">
+            <i class="warn"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'success', accent:'teal', warn:'lime'}">
+            <input type="radio" name="color" value="4">
+            <i class="success"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'info', accent:'light-blue', warn:'success'}">
+            <input type="radio" name="color" value="5">
+            <i class="info"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'blue', accent:'indigo', warn:'primary'}">
+            <input type="radio" name="color" value="6">
+            <i class="blue"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'warning', accent:'grey-100', warn:'success'}">
+            <input type="radio" name="color" value="7">
+            <i class="warning"></i>
+          </label>
+          <label class="radio radio-inline m-0 ui-check ui-check-color ui-check-md" data-value="{primary:'danger', accent:'grey-100', warn:'grey-300'}">
+            <input type="radio" name="color" value="8">
+            <i class="danger"></i>
+          </label>
+        </p>
+        <p>Themes:</p>
+        <div data-target="bg" class="row no-gutter text-u-c text-center _600 clearfix">
+          <label class="p-a col-sm-6 light pointer m-0">
+            <input type="radio" name="theme" value="" hidden>
+            Light
+          </label>
+          <label class="p-a col-sm-6 grey pointer m-0">
+            <input type="radio" name="theme" value="grey" hidden>
+            Grey
+          </label>
+          <label class="p-a col-sm-6 dark pointer m-0">
+            <input type="radio" name="theme" value="dark" hidden>
+            Dark
+          </label>
+          <label class="p-a col-sm-6 black pointer m-0">
+            <input type="radio" name="theme" value="black" hidden>
+            Black
+          </label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="switcher box-color black lt" id="sw-demo">
+      <a href ui-toggle-class="active" target="#sw-demo" class="box-color black lt text-color sw-btn">
+        <i class="fa fa-list text-white"></i>
+      </a>
+      <div class="box-header">
+        <h2>Demos</h2>
+      </div>
+      <div class="box-divider"></div>
+      <div class="box-body">
+        <div class="row no-gutter text-u-c text-center _600 clearfix">
+          <a href="dashboard.html"
+            class="p-a col-sm-6 primary">
+            <span class="text-white">Default</span>
+          </a>
+          <a href="dashboard.0.html"
+            class="p-a col-sm-6 success">
+            <span class="text-white">Zero</span>
+          </a>
+          <a href="dashboard.1.html"
+            class="p-a col-sm-6 blue">
+            <span class="text-white">One</span>
+          </a>
+          <a href="dashboard.2.html"
+            class="p-a col-sm-6 warn">
+            <span class="text-white">Two</span>
+          </a>
+          <a href="dashboard.3.html"
+            class="p-a col-sm-6 danger">
+            <span class="text-white">Three</span>
+          </a>
+          <a href="dashboard.4.html"
+            class="p-a col-sm-6 green">
+            <span class="text-white">Four</span>
+          </a>
+          <a href="dashboard.5.html"
+            class="p-a col-sm-6 info">
+            <span class="text-white">Five</span>
+          </a>
+          <div 
+            class="p-a col-sm-6 lter">
+            <span class="text">...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>{% endcomment %}
+  <!-- / -->
+
+<!-- ############ LAYOUT END-->
+
+  </div>
+<!-- build:js scripts/app.html.js -->
+<!-- jQuery -->
+  <script src="../static/user/libs/jquery/jquery/dist/jquery.js"></script>
+<!-- Bootstrap -->
+  <script src="../static/user/libs/jquery/tether/dist/js/tether.min.js"></script>
+  <script src="../static/user/libs/jquery/bootstrap/dist/js/bootstrap.js"></script>
+<!-- core -->
+  <script src="../static/user/libs/jquery/underscore/underscore-min.js"></script>
+  <script src="../static/user/libs/jquery/jQuery-Storage-API/jquery.storageapi.min.js"></script>
+  <script src="../static/user/libs/jquery/PACE/pace.min.js"></script>
+
+  <script src="../static/user/scripts/config.lazyload.js"></script>
+
+  <script src="../static/user/scripts/palette.js"></script>
+  <script src="../static/user/scripts/ui-load.js"></script>
+  <script src="../static/user/scripts/ui-jp.js"></script>
+  <script src="../static/user/scripts/ui-include.js"></script>
+  <script src="../static/user/scripts/ui-device.js"></script>
+  <script src="../static/user/scripts/ui-form.js"></script>
+  <script src="../static/user/scripts/ui-nav.js"></script>
+  <script src="../static/user/scripts/ui-screenfull.js"></script>
+  <script src="../static/user/scripts/ui-scroll-to.js"></script>
+  <script src="../static/user/scripts/ui-toggle-class.js"></script>
+
+  <script src="../static/user/scripts/app.js"></script>
+
+  <!-- ajax -->
+  <script src="../static/user/libs/jquery/jquery-pjax/jquery.pjax.js"></script>
+  <script src="../static/user/scripts/ajax.js"></script>
+<!-- endbuild -->
+</body>
+</html>

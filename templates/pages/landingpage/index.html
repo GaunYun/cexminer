@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600%7CRoboto:400,400i,500,700" rel="stylesheet">
+    {% load static %}
+	<!-- Icons -->
+	<link rel="stylesheet" href="{% static 'landingpage/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/cryptocoins.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/cryptocoins-colors.css' %}">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{% static 'landingpage/css/bootstrap-reboot.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/bootstrap-grid.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'landingpage/css/main-color1.css' %}">
+    <link rel="stylesheet" href="{% static 'landingpage/css/new-defined.css' %}">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="{% static 'landingpage/icon/favicon-32x32.png' %}" sizes="32x32">
+	<link rel="apple-touch-icon" href="{% static 'landingpage/icon/favicon-32x32.png' %}">
+	
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<title>Automated Crypto Trading Bot - cexminer.nz</title>
+<script>
+  (function(b,i,t,C,O,I,N) {
+    window.addEventListener('load',function() {
+      if(b.getElementById(C))return;
+      I=b.createElement(i),N=b.getElementsByTagName(i)[0];
+      I.src=t;I.id=C;N.parentNode.insertBefore(I, N);
+    },false)
+  })(document,'script','https://widgets.bitcoin.com/widget.js','btcwdgt');
+</script>
+</head>
+<body>
+	
+	<!-- header -->
+	<header class="header">
+		<!-- logo -->
+		<div class="header__logo">
+			<a href="/index">
+				<img style="height:45px;" src="{% static 'landingpage/img/logo.png' %}" alt="">
+			</a>
+		</div>
+		<!-- end logo -->
+
+		<!-- navigation -->
+		<ul class="header__nav">
+
+			<li><a href="/index">Home</a></li>
+            <li><a href="#howto">How it works</a></li>
+			<li><a href="#pricing">Pricing</a></li>
+            <li><a href="#features">Features</a></li>
+			<li><a href="#FAQ">FAQ</a></li>
+			{% comment %}<li class="dropdown header__dropdown">
+				<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+
+				<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuLink2">
+					<li><a href="/article">Article</a></li>
+					<li><a href="/faq">Help</a></li>
+				</ul>
+			</li>{% endcomment %}
+		</ul>
+		<!-- end navigation -->
+
+		<!-- buttons -->
+		<div class="header__btns">
+			<a href="/login" class="btn btn--transparent btn--header">log in</a>
+			<a href="/signup" class="btn btn--white btn--header">sign up</a>
+		</div>
+		<!-- end buttons -->
+
+		<!-- mob button -->
+		<button class="header__menu" type="button">
+			<i class="ti-menu"></i>
+			<i class="ti-close"></i>
+		</button>
+		<!-- end mob button -->
+	</header>
+	<!-- end header -->
+  <form class="content">
+	<!-- home -->
+	<section class="home home--circle">
+		<!-- particles -->
+		<div id="particles-js" class="home__particles"></div>
+		<!-- end particles -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-5 offset-xl-0">
+					<div class="home__content">
+                        <p style="font-size: 40px;" class="home__title"><b>Trade cryptocurrencies automatically, 24/7</b></p>
+						<p class="home__text">{{ summary|safe }}</p>
+						<a href="/signup" class="btn btn--shadow">Open demo account</a>
+					</div>
+				</div>
+
+				<div class="col-xl-5 offset-xl-1">
+					<div class="home__content">
+						
+							<div class="btcwdgt-chart"></div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<a href="#howto" data-scroll class="home__btn">
+			<i class="ti-angle-double-down"></i>
+		</a>
+	</section>
+	<!-- end home -->
+
+
+	<!-- services -->
+	<section class="section section--border-bottom" id="howto">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">How does it work?</h2>
+					<p class="section__text">Our system trades on your behalf. So, none of your coins are actually stored on platform. This way, safety is maximized for our users.</p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						
+						<h3 class="price__title"><i class="ti-bolt"></i>  Step 1: Connect</h3></br>
+						 <img src="{% static 'landingpage/img/home/step1.png' %}" style="display: block;margin: 0 auto;"alt=""><br>
+						<p class="service__text">Go to Exchange menu, link your exchange where your funds are using your <b>API and API secret</b></p>
+
+					</div>
+					<!-- end service -->
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h3 class="price__title"><i class="ti-plus"></i>  Step 2: Add bot</h3></br>
+						<img src="{% static 'landingpage/img/home/step2.png' %}" style="display: block;margin: 0 auto;"alt=""><br>
+						<p class="service__text">Then add bot and configure the bot with your trading style based on our <b>indicators setting</b>.</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						
+						<h3 class="price__title"><i class="ti-stats-up"></i>  Step 3: Turn it on!</h3></br>
+						<img src="{% static 'landingpage/img/home/step3.png' %}" style="display: block;margin: 0 auto;"alt=""><br>
+						<p class="service__text">Go to work eat or sleep, your bot will be a trading expert in your off-time and be trading for you <b>24/7</b>.</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+				
+					<!-- end service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end services -->
+
+
+    <!-- Safety Setting -->
+	<section class="section section--border-bottom">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">Safety Setting</h2>
+					<p class="section__text"></p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+
+			<div class="row">
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-money"></i>
+						<h3 class="feature__title">Nerver Buy Higher</h3>
+						<p class="feature__text">{{ risk_setting1 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-shield"></i>
+						<h3 class="feature__title">Overcome Double Fees</h3>
+						<p class="feature__text">{{ risk_setting2 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-rocket"></i>
+						<h3 class="feature__title">Stay Profitable</h3>
+						<p class="feature__text">{{ risk_setting3 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-thumb-up"></i>
+						<h3 class="feature__title">Never Sell Cheaper</h3>
+						<p class="feature__text">{{ risk_setting4 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-pulse"></i>
+						<h3 class="feature__title">Panic Button</h3>
+						<p class="feature__text">{{ safety1 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-notepad"></i>
+						<h3 class="feature__title">Demo Button</h3>
+						<p class="feature__text">{{ safety5 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-control-stop"></i>
+						<h3 class="feature__title">Stop Loss</h3>
+						<p class="feature__text">{{ safety2 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-control-pause"></i>
+						<h3 class="feature__title">Deactivate After Trades</h3>
+						<p class="feature__text">{{ safety3 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>
+
+
+
+
+				<div class="col-12 col-sm-6 col-xl-4">
+					<!-- feature -->
+					<div class="feature">
+						<i class="ti-power-off"></i>
+						<h3 class="feature__title">Auto-Turn Off</h3>
+						<p class="feature__text">{{ safety4 }}</p>
+					</div>
+					<!-- end feature -->
+				</div>				
+
+
+
+			</div>
+		</div>
+	</section>
+	<!-- End Safety Setting -->
+
+
+
+	<!-- pricing -->
+	<section class="section section--border-bottom" id="pricing">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">Pricing</h2>
+					<p class="section__text">How to choose the right trade style and package base on you <a href="#whatype"><b>personality</b></a>.</p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-lg-10 offset-lg-1 col-xl-12 offset-xl-0">
+					<!-- price -->
+					<div class="price">
+						<h3 class="price__title">Newbie</h3>
+						<ul class="price__list">
+							<li><b>Realtime 24/7 </b>cloud trading bot</li>
+							<li><b>5</b> bots</li>
+							<li><b>Bot type: </b>Indicator bot</li>
+							<li><b>Safety feature</b></li>
+                            <li><b>Risk management</b></li>
+                            <li><b>Up to 5</b> coins</li>
+							<li>Trades with <b>7.5</b> minutes interval</li>
+						</ul>
+						<span class="price__value">$9 <img src="{% static 'landingpage/img/free-trial.png' %}" style="width: 35%;" alt=""></span>
+						<p class="price__text">every month or 6 months</p>
+						<a href="/signup"><button class="btn btn--border btn--center" type="button">Free trial</button></a>
+					</div>
+					<!-- end price -->
+
+					<!-- price -->
+					<div class="price price--best">
+						<h3 class="price__title">Enthusiast</h3>
+						<ul class="price__list">
+							<li><b>Realtime 24/7</b> cloud trading bot</li>
+							<li><b>20</b> bots</li>
+							<li><b>Bot type: </b>Indicator bot, Machine Learning bot, <br>Arbitrage bot, Marketmaker bot</li>
+							<li><b>Safety feature</b></li>
+                            <li><b>Risk management</b></li>
+                            <li><b>Unlimited</b> coins</li>
+							<li>Trades with <b>2.5</b> minutes interval</li>
+						</ul>
+						<span class="price__value">$99</span>
+						<p class="price__text">every month or 6 months</p>
+						<a href="/signup"><button class="btn btn--center" type="button">Join now</button></a>
+					</div>
+					<!-- end price -->
+
+					<!-- price -->
+					<div class="price">
+						<h3 class="price__title">Early Adopter</h3>
+						<ul class="price__list">
+							<li><b>Realtime 24/7</b> cloud trading bot</li>
+							<li><b>10</b> bots</li>
+							<li><b>Bot type: </b>Indicator bot, Machine Learning bot</li>
+							<li><b>Safety feature</b></li>
+                            <li><b>Risk management</b></li>
+                            <li><b>Unlimited</b> coins</li>
+							<li>Trades with <b>5 </b>minutes interval</li>
+						</ul>
+						<span class="price__value">$49</span>
+						<p class="price__text">every month or 6 months</p>
+						<a href="/signup"><button class="btn btn--border btn--center" type="button">Join now</button></a>
+					</div>
+					<!-- end price -->
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end pricing -->
+
+
+	<!-- Features-->
+	<section class="section" id="features">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">Features</h2>
+					<p class="section__text">The one and only machine learning based automated cryptocurrency trading bot with <b>newbie friendly interface.</b></p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h2 class="service__title1">Multiple Coins</h2>
+                        <p class="service__text">{{ feature1|safe }}</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h3 class="service__title1">Backtesting</h3>
+                        <p class="service__text">{{ feature2 }}</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h3 class="service__title1">Multiple Strategies</h3>
+                        <p class="service__text">{{ feature3 }}</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+                <div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h2 class="service__title1">Machine Learning</h2>
+                        <p class="service__text">{{ feature4 }}</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h3 class="service__title1">100% Passive</h3>
+                        <p class="service__text">{{ feature5 }}</p>
+					</div>
+					<!-- end service -->
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-4">
+					<!-- service -->
+					<div class="service">
+						<h3 class="service__title1">No Feeling & Discipline</h3>
+                        <p class="service__text">{{ feature6 }}</p>
+					</div>
+					<!-- end service -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end Features -->
+
+    <!-- Risk -->
+	<section class="section section--border-top" id="profit">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">Risk Management</h2>
+					<p class="section__text">Never ever be fool by fancy sales pitches or <b>Huge Quick</b> return.</p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-lg-8">
+			  
+			    <img src="{% static 'landingpage/img/home/risk.png' %}" style="max-width: 100%;" alt="">
+			    </div>
+				<div class="col-12 col-lg-4">
+					<!-- get started -->
+					
+				{{ risk_note|safe }}
+					
+					<!-- end get started -->
+				</div>
+            </div>
+		</div>
+	</section>
+	<!-- end Risk -->
+
+
+    <!-- choose trade style and package -->
+	<section class="section section--border-top" id="whatype">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">What package is for you</h2>
+					<p class="section__text">Match your personality and trading style with one of the following.</p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+				
+                {{ trade_style|safe }}
+			</div>
+		</div>
+	</section>
+	<!-- end choose package -->
+
+	
+    <!-- profit -->
+	<section class="section section--border-top" id="profit">
+		<div class="container">
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">How much profit can I make?</h2>
+					<p class="section__text">Trading bots are now used by over <b>80</b> percent of trade markets, including the majority of investment banks and other big institutions.</p>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+
+				<div class="col-12 col-lg-4">
+			  
+			    {{ profit|safe }}
+			    </div>
+				<div class="col-12 col-lg-8">
+					<!-- get started -->
+					
+					<img src="{% static 'landingpage/img/home/profit.png' %}"  style="max-width: 100%;" alt="">
+					
+					<!-- end get started -->
+				</div>
+            </div>
+		</div>
+	</section>
+	<!-- end Profit -->
+
+	<!-- faq -->
+	<section class="section" id="FAQ">
+		<div class="container">
+
+			<div class="row">
+				<!-- section title -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					<h2 class="section__title">Frequently asked questions</h2>
+					<p></p><br>
+				</div>
+				<!-- end section title -->
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 col-xl-5 offset-xl-1">
+					<div class="faq">
+						<h3 class="faq__title">Is it safe?</h3>
+						<p class="faq__text">{{ faq1|safe }}</p>
+					
+					</div>
+
+					<div class="faq">
+						<h3 class="faq__title">Are profits guaranteed?</h3>
+						<p class="faq__text">{{ faq2|safe }}</p>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-xl-5">
+					<div class="faq">
+						<h3 class="faq__title">Are the prices refundable?</h3>
+						<p class="faq__text">{{ faq3|safe }}</p>
+					</div>
+
+					<div class="faq">
+						<h3 class="faq__title">Can I get rich by using this bot?</h3>
+						<p class="faq__text">{{ faq4|safe }}</p>
+					</div>
+
+					<div class="faq">
+						<h3 class="faq__title">Do you have Affiliate Program?</h3>
+						<p class="faq__text">{{ faq5|safe }}</p>
+					</div>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end faq -->
+
+	<!-- partners -->
+	<div class="partners section--border-top section--border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="custom">
+	<div class="row text-center">
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+    <img src="{% static 'landingpage/img/partners/binance_logo.png' %}" alt="Binance Exchange" class="img-responsive" style="margin:0 auto;">
+ 
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+    <img src="{% static 'landingpage/img/partners/kraken_logo.png' %}" alt="Kraken Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+   <img src="{% static 'landingpage/img/partners/bittrex_logo.png' %}" alt="Bittrex Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+   <img src="{% static 'landingpage/img/partners/quoinex_logo.png' %}" alt="Quoinex Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+</div>
+<div class="row text-center">
+  
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+    <img src="{% static 'landingpage/img/partners/cexio_logo.png' %}" alt="Cex.io Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+  
+ <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+   <img src="{% static 'landingpage/img/partners/okex_logo.png' %}" alt="OKEX Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+   <img src="{% static 'landingpage/img/partners/hitbtc_logo.png' %}" alt="HitBTC Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 p-25">
+   <img src="{% static 'landingpage/img/partners/cryptopia_logo.png' %}" alt="Cryptopia Exchange" class="img-responsive" style="margin:0 auto;">
+  </div>
+</div>
+
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- end partners -->
+
+    
+  </form>
+	<!-- footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3 ">
+					<!-- logo -->
+					<div class="footer__logo">
+						<a href="/index">
+							<img src="{% static 'landingpage/icon/footer.png' %}"  class="footer_img" alt="Cexminer.nz">
+						</a>
+
+					</div>
+					<!-- end logo -->
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+					<h6 class="footer__title">Features</h6>
+					<ul class="footer__list">
+						<li><a href="#">Multiple Coins</a></li>
+						<li><a href="#features">Backtesting</a></li>
+						<li><a href="#safety">Risk management</a></li>
+						<li><a href="#">Machine Learning</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+					<h6 class="footer__title">Links</h6>
+					<ul class="footer__list">
+						<li><a href="#">Tutorial</a></li>
+						<li><a href="#pricing">Pricing</a></li>
+						<li><a href="#FAQ">FAQ</a></li>
+						<li><a href="mailto:info@cexminer.nz">Contact Us</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-sm-6 col-md-3 col-lg-3">
+					<h6 class="footer__title">Contact</h6>
+					<ul class="footer__list">
+						<li><a href="tel:+0800003566">0800 003566</a></li>
+						<li><a href="mailto:info@cexminer.nz">info@cexminer.nz</a></li>
+						<li><a href="#">Albany, Auckland 0632</a></li>
+					</ul>
+					<ul class="footer__social">
+						<li><a href="#"><i class="ti-facebook"></i></a></li>
+						<li><a href="#"><i class="ti-linkedin"></i></a></li>
+						<li><a href="#"><i class="ti-instagram"></i></a></li>
+						<li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+						<li><a href="#"><i class="ti-google"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="col-12">
+					<div class="footer__copyright">
+						<small>© OCNZ Limited. All rights reserved.</small>
+
+						<ul>
+							<li><a href="#">Term of service</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- end footer -->
+
+	<script src="{% static 'landingpage/js/jquery-3.2.1.slim.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/smooth-scroll.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/jquery.magnific-popup.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/particles.min.js' %}"></script>
+	<script src="{% static 'landingpage/js/particles-app.js' %}"></script>
+	<script src="{% static 'landingpage/js/main.js' %}"></script>
+</body>
+</html>
